@@ -1,0 +1,109 @@
+@import "compass/css3";
+ * {
+	 box-sizing: border-box;
+}
+html{
+
+}
+body {
+    background: linear-gradient(37deg, #F3DDBD 4%, #748AA3 94%);
+    background: -moz-linear-gradient(37deg, #F3DDBD 4%, #748AA3 94%);
+    background: -webkit-linear-gradient(37deg, #F3DDBD 4%, #748AA3 94%);
+    background: -o-linear-gradient(37deg, #F3DDBD 4%, #748AA3 94%);
+	width: 100vw;
+	overflow-x: hidden;
+}
+ .parallax {
+	 perspective: 300px;
+	 height: 100vh;
+	 overflow-x: hidden;
+	 overflow-y: auto;
+	 position: absolute;
+	 top: 0;
+	 left: 50%;
+	 right: 0;
+	 bottom: 0;
+	 margin-left: -780px;
+	 z-index: -3;
+}
+ .parallax__layer {
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+	 bottom: 0;
+	 left: 0;
+}
+ .parallax__layer img {
+	 display: block;
+	 position: absolute;
+	 bottom: 0;
+}
+ .parallax__cover {
+	 background-color: #54676E;
+	 display: block;
+	 position: absolute;
+	 top: 200%;
+	 left: 0;
+	 right: 0;
+	 height: 2000px;
+	 z-index: 1;
+	 
+}
+ .parallax__layer__0 {
+	 transform: translateZ(-550px) scale(2.3) translateX(-180px)translateY(-70px);
+     /* width: 100vw; */
+}
+.parallax__layer__0 img{
+    margin-bottom: 300px;
+    
+}
+ .parallax__layer__1 {
+	 transform: translateZ(-500px) scale(3)translateY(-210px)translateX(140px);
+     
+}
+
+ .parallax__layer__2 {
+	 transform: translateZ(-400px) scale(2.1)translateX(330px);
+     left: 80px;
+     top: 430px;
+     bottom: 40px;
+
+}
+ .parallax__layer__3 {
+	 transform: translateZ(-350px) scale(2.5)translateY(400px);
+
+}
+
+ .parallax__layer__4 {
+	 transform: translateZ(-350px) scale(2.5)translateY(-290px)translateX(1220px);
+
+}
+
+ .parallax__layer__5 {
+	 transform: translateZ(-300px) scale(2)translateY(-240px);
+     
+}
+
+ .parallax__layer__6 {
+	 transform: translateZ(-200px) scale(1.8)translateY(380px)translateX(50px);
+
+}
+
+.parallax__layer__7 {
+    transform: translateZ(-100px) scale(1.5)translateY(270px)translateX(1150px);
+    
+}
+
+.parallax__layer__8 {
+    transform: translateZ(-100px) scale(1.6)translateY(260px)translateX(130px);
+
+}
+
+
+
+section{
+	margin-left: 50px;
+}
+.section1{
+	color: aliceblue;
+}
