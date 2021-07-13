@@ -11,6 +11,8 @@ body {
     background: -o-linear-gradient(33deg, #ECE88D 14%, #25B7DB 100%);
 	width: 100vw;
 	overflow-x: hidden;
+	font-family: 'Noto Sans TC', sans-serif;
+
 }
 /* header */
 .navbarItem1{

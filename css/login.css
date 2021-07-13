@@ -2,7 +2,8 @@
  * {
 	 box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap');
+
 html{
     width: 100vw;
 }
@@ -14,6 +15,8 @@ body {
 	width: 100vw;
 	overflow-x: hidden;
     overflow-y: hidden;
+	font-family: 'Noto Sans TC', sans-serif !important;
+    font-weight: 300;
 }
 
 .navbarItem4{
@@ -30,23 +33,19 @@ body {
 }
 .login-title{
     position:absolute;
-    right:12%;
-    top:15%;
-    color:#FFFAED;
-    
-}
-.login-title-item{
-    font-size:48px;
-    font-weight:700;
-
+    right:16%;
+    top:18%;
+    color: #FFFAED;
+    font-size: 28px !important;
+    font-weight: 500;
 }
 .login_form{
     background-color: #414761;
-    opacity: 80%;
+    opacity: 0.8;
     width:30%;
     height:70%;
     border-radius: 20px;
-    margin-left: 50%;
+    margin-left: 45%;
     margin-top: 10%;
     position: absolute;
 }
@@ -63,8 +62,13 @@ body {
     opacity: 1;
 
 }
+.form-control{
+    height: 30px!important;
+}
 .form_notices{
     margin-left:15%;
+    font-size: 12px;
+    line-height: 30px;
 }
 .forget{
     color:#FFFAED;
@@ -73,14 +77,14 @@ body {
     color:#FFFAED;
 }
 .log_btn{
-    margin-left:33%;
     margin-top:20px;
+    text-align: center;
 }
 .btn-primary{
-    width:160px;
-    height:55px;
+    width:250px;
+    height:61px;
     background-color: #FFFAED !important;
-    opacity: 100% !important;
+    opacity: 1 !important;
     color:#414761 !important;
     border:#414761 !important;
     border-radius: 30px !important;
@@ -95,8 +99,10 @@ body {
 .google{
     font-size:15px !important;
 }
-.img{
-    width: 100%;
+
+.google img{
+    width: 10%;
+    margin-right: 3%;
     max-height: 100vh;
     object-fit:cover;
     object-position:0% 100%;
