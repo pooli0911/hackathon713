@@ -1,0 +1,31 @@
+@import "compass/css3";
+ * {
+	 box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap');
+html{
+    
+}
+body {
+    background: linear-gradient(33deg, #ECE88D 14%, #25B7DB 100%);
+    background: -moz-linear-gradient(33deg, #ECE88D 14%, #25B7DB 100%);
+    background: -webkit-linear-gradient(33deg, #ECE88D 14%, #25B7DB 100%);
+    background: -o-linear-gradient(33deg, #ECE88D 14%, #25B7DB 100%);
+	width: 100vw;
+	overflow-x: hidden;
+	font-family: 'Noto Sans TC', sans-serif;
+}
+
+.navbarItem4{
+    font-weight: bold;
+}
+.head-navbarItem{
+    color: #fffaed;
+}
+.login-img{
+    width:100vw;
+    height:100vh;
+    position:absolute;
+    left:0;
+    top:0;
+}
