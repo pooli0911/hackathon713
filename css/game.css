@@ -47,11 +47,22 @@ body {
 	 position: absolute;
 	 bottom: 0;
 }
+.parallax__cover_r{
+	background-color: #7dc6c6;
+	display: block;
+	position: absolute;
+	top: 170%;
+	left: 50%;
+	right: 0;
+	height: 200px;
+	z-index: 0;
+}
  .parallax__cover {
 	 background-color: #7dc6c6;
 	 display: block;
 	 position: absolute;
-	 top: 170%;
+	 top: 190%;
+	 padding-top: 80px;
 	 left: 0;
 	 right: 0;
 	 height: 2000px;
