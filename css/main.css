@@ -145,7 +145,7 @@ section{
 	margin-left: 100px;
 	color: #FFFAED;
 }
-.section1{
+.section1, .section2, .section3{
 	display: flex;
 	margin-top: 5%;
 }
@@ -159,6 +159,9 @@ section{
 	line-height: 55px;
 	font-size: 16px;
 	cursor: pointer;
+}
+.main-button:hover{
+	background-color: #e6ddc8;
 }
 .about-us-button{
 	margin-top: 8%;
@@ -183,4 +186,14 @@ section{
 	font-size: 28px;
 	margin-left: 10%;
 	margin-top: 8%;
+}
+.game-title{
+	font-size: 28px;
+	margin-top: -8%;
+	margin-left: 17.5%;
+}
+.game-text{
+	margin-left: 15%;
+	width: 52%;
+	font-size: 20px;
 }
