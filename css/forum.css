@@ -18,6 +18,10 @@ body {
 .navbarItem2{
     font-weight: bold;
 }
+.head-navbarItem{
+    color: #fffaed;
+}
+
  .parallax {
 	 perspective: 300px;
 	 height: 100vh;

@@ -17,6 +17,9 @@ body {
 .navbarItem1{
     font-weight: bold;
 }
+.head-navbarItem{
+    color: #3a4522;
+}
 
 /* parallax */
  .parallax {
