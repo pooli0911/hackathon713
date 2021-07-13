@@ -15,27 +15,6 @@ body {
 	font-family: 'Noto Sans TC', sans-serif;
 }
 /* header */
-.head-navbar{
-    display:flex;
-    position:absolute;
-    margin-top:1.5%;
-    right:3%;
-    width:30%;
-    justify-content: space-around;
-}
-.head-navbarItem{
-    position: relative;
-    color: #fffaed;
-    z-index:5;
-    text-decoration: none;
-    font-size:18px;
-    margin-right:3%;
-    text-align: center;
-    cursor: pointer;
-}
-.head-navbarItem:hover{
-	font-weight: bold;
-}
 .navbarItem2{
     font-weight: bold;
 }
