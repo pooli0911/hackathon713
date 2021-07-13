@@ -2,7 +2,8 @@
  * {
 	 box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap');
+
 body {
     background: linear-gradient(33deg, #ECE88D 14%, #25B7DB 100%);
     background: -moz-linear-gradient(33deg, #ECE88D 14%, #25B7DB 100%);
@@ -10,12 +11,10 @@ body {
     background: -o-linear-gradient(33deg, #ECE88D 14%, #25B7DB 100%);
 	width: 100vw;
 	overflow-x: hidden;
-	font-family: 'Noto Sans TC', sans-serif;
 }
-
 /* header */
 .navbarItem1{
-    font-weight: bold;
+    font-weight: 500;
 }
 .head-navbarItem{
     color: #3a4522;
