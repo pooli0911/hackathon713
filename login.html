@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/head-foot.css">
     <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
     <title>Home</title>
 </head>
@@ -23,13 +25,15 @@
     <div class="login-img">
         <img src="./image/login-background.png" class="img" />
     </div>
+    <div id="about-us" class="login-title">
+        <h3 class="login-title-item">登<br>入<br>／</h3>
+    </div>
     <div class="login_form">
-        <p class="login">登入</p>
         <div class="id_form">
             <div class="id_box">
                 <form>
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">身分證字號</label>
+                        <label for="exampleInputEmail1" class="form-label">電子郵件</label>
                         <input type="text" class="form-control" id="email" aria-describedby="emailHelp">
                     </div>
                 </form>
@@ -49,10 +53,14 @@
             <a href="#" class="forget">忘記密碼,找回</a>
         </div>
         <div class="form_notices">
-            <a href="./card.html" class="install">註冊</a>
+            <a href="./card.html" class="install">還沒有帳號?點擊註冊</a>
         </div>
         <div class="log_btn">
-            <button type="submit" id="signin" class="btn btn-primary">登入</button>
+            <button type="submit" id="signin" class="btn btn-primary log">登入</button>
+        </div>
+        <p class="or-text">or</p>
+        <div class ="log_btn">
+            <button type="submit" id="signin" class="btn btn-primary google"><img src="https://img.icons8.com/color/16/000000/google-logo.png"> 使用Google帳號</button>
         </div>
     </div>
     <div id="page_top">

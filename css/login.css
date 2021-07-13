@@ -28,12 +28,72 @@ body {
     left:0;
     top:0;
 }
+.login-title{
+    position:absolute;
+    right:12%;
+    top:15%;
+    color:#FFFAED;
+    
+}
+.login-title-item{
+    font-size:48px;
+    font-weight:700;
+
+}
 .login_form{
-    background-color: aliceblue;
+    background-color: #414761;
+    opacity: 80%;
+    width:30%;
+    height:70%;
     border-radius: 20px;
     margin-left: 50%;
     margin-top: 10%;
     position: absolute;
+}
+.id_form,
+.number_form{
+    width:70%;
+    margin:auto;
+}
+.id_form{
+    margin-top:10%;
+}
+.form-label{
+    color:#FFFAED;
+    opacity: 1;
+
+}
+.form_notices{
+    margin-left:15%;
+}
+.forget{
+    color:#FFFAED;
+}
+.install{
+    color:#FFFAED;
+}
+.log_btn{
+    margin-left:33%;
+    margin-top:20px;
+}
+.btn-primary{
+    width:160px;
+    height:55px;
+    background-color: #FFFAED !important;
+    opacity: 100% !important;
+    color:#414761 !important;
+    border:#414761 !important;
+    border-radius: 30px !important;
+    font-size: 32px ;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+.or-text{
+    color:#FFFAED;
+    text-align:center;
+    margin-top:10px;
+}
+.google{
+    font-size:15px !important;
 }
 .img{
     width: 100%;
