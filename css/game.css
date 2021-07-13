@@ -1,0 +1,113 @@
+@import "compass/css3";
+ * {
+	 box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap');
+html{
+}
+body {
+    background: linear-gradient(74deg, #E9F3FA 0%, #00ACE6 100%);
+    background: -moz-linear-gradient(74deg, #E9F3FA 0%, #00ACE6 100%);
+    background: -webkit-linear-gradient(74deg, #E9F3FA 0%, #00ACE6 100%);
+    background: -o-linear-gradient(74deg, #E9F3FA 0%, #00ACE6 100%);
+	width: 100vw;
+	overflow-x: hidden;
+	font-family: 'Noto Sans TC', sans-serif;
+}
+/* header */
+.navbarItem3{
+    font-weight: 500;
+}
+.head-navbarItem{
+    color: #fffaed;
+}
+
+ .parallax {
+	 perspective: 300px;
+	 height: 100vh;
+	 overflow-x: hidden;
+	 overflow-y: auto;
+	 position: absolute;
+	 top: 0;
+	 left: 50%;
+	 right: 0;
+	 bottom: 0;
+	 margin-left: -780px;
+	 z-index: -3;
+}
+ .parallax__layer {
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+	 bottom: 0;
+	 left: 0;
+}
+ .parallax__layer img {
+	 display: block;
+	 position: absolute;
+	 bottom: 0;
+}
+ .parallax__cover {
+	 background-color: #7dc6c6;
+	 display: block;
+	 position: absolute;
+	 top: 170%;
+	 left: 0;
+	 right: 0;
+	 height: 2000px;
+	 z-index: 0;
+	 
+}
+ .parallax__layer__0 {
+	 transform: translateZ(-550px) scale(3.2) translateX(10px)translateY(200px);
+     /* width: 100vw; */
+}
+.parallax__layer__0 img{
+    margin-bottom: 500px;
+    
+}
+ .parallax__layer__1 {
+	 transform: translateZ(-500px) scale(3)translateY(-210px)translateX(300px);
+     
+}
+
+ .parallax__layer__2 {
+	 transform: translateZ(-400px) scale(2.8)translateY(110px) translateX(40px);
+
+
+}
+ .parallax__layer__3 {
+	 transform: translateZ(-350px) scale(2.8)translateY(70px)translateX(900px);
+
+}
+
+ .parallax__layer__4 {
+	 transform: translateZ(-300px) scale(2)translateY(350px)translateX(0px);
+
+}
+
+ .parallax__layer__5 {
+	 transform: translateZ(-200px) scale(2)translateY(180px) translateX(620px);
+     
+}
+
+ .parallax__layer__6 {
+	 transform: translateZ(-150px) scale(1.8)translateY(260px)translateX(450px);
+
+}
+
+.parallax__layer__7 {
+    transform: translateZ(-100px) scale(2.1)translateY(140px)translateX(280px);
+    
+}
+section{
+    margin-left: 50px;
+}
+.section1{
+	color: #fffaed;
+}
+.game-title{
+	margin-top: 10%;
+	font-size: 28px;
+	margin-left: 82.5%;
+}
