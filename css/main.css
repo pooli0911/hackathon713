@@ -2,11 +2,16 @@
  * {
 	 box-sizing: border-box;
 }
- html, body {
+html{
+
+}
+body {
     background: linear-gradient(33deg, #ECE88D 14%, #25B7DB 100%);
     background: -moz-linear-gradient(33deg, #ECE88D 14%, #25B7DB 100%);
     background: -webkit-linear-gradient(33deg, #ECE88D 14%, #25B7DB 100%);
     background: -o-linear-gradient(33deg, #ECE88D 14%, #25B7DB 100%);
+	width: 100vw;
+	overflow-x: hidden;
 }
  .parallax {
 	 perspective: 300px;
@@ -19,6 +24,7 @@
 	 right: 0;
 	 bottom: 0;
 	 margin-left: -780px;
+	 z-index: -3;
 }
  .parallax__layer {
 	 position: absolute;
@@ -36,11 +42,12 @@
 	 background-color: #3a4522;
 	 display: block;
 	 position: absolute;
-	 top: 200%;
+	 top: 160%;
 	 left: 0;
 	 right: 0;
 	 height: 2000px;
-	 z-index: 2;
+	 z-index: 1;
+	 
 }
  .parallax__layer__0 {
 	 transform: translateZ(-550px) scale(3);
@@ -102,8 +109,14 @@
 }
 .parallax__layer__9 {
     transform: translateZ(-100px) scale(1.5);
-    top: -4000px;
+    top: -3300px;
 }
 .parallax__layer__9 img{
     margin-left: 10px;
+}
+section{
+	margin-left: 50px;
+}
+.section1{
+	color: aliceblue;
 }
