@@ -7,6 +7,11 @@ $(function () {
         } else {
             $('#page_top').fadeOut("slow");
         }
+        if ($('.parallax').scrollTop() > 700) {
+            $('.head-navbar').fadeOut("slow");
+        } else {
+            $('.head-navbar').fadeIn("slow");
+        }
 
 
         scrollHeight = $('.parallax').height();
