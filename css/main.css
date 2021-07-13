@@ -1,0 +1,109 @@
+@import "compass/css3";
+ * {
+	 box-sizing: border-box;
+}
+ html, body {
+    background: linear-gradient(33deg, #ECE88D 14%, #25B7DB 100%);
+    background: -moz-linear-gradient(33deg, #ECE88D 14%, #25B7DB 100%);
+    background: -webkit-linear-gradient(33deg, #ECE88D 14%, #25B7DB 100%);
+    background: -o-linear-gradient(33deg, #ECE88D 14%, #25B7DB 100%);
+}
+ .parallax {
+	 perspective: 300px;
+	 height: 100vh;
+	 overflow-x: hidden;
+	 overflow-y: auto;
+	 position: absolute;
+	 top: 0;
+	 left: 50%;
+	 right: 0;
+	 bottom: 0;
+	 margin-left: -780px;
+}
+ .parallax__layer {
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+	 bottom: 0;
+	 left: 0;
+}
+ .parallax__layer img {
+	 display: block;
+	 position: absolute;
+	 bottom: 0;
+}
+ .parallax__cover {
+	 background-color: #3a4522;
+	 display: block;
+	 position: absolute;
+	 top: 200%;
+	 left: 0;
+	 right: 0;
+	 height: 2000px;
+	 z-index: 2;
+}
+ .parallax__layer__0 {
+	 transform: translateZ(-550px) scale(3);
+     margin-bottom: 500px;
+     margin-left: 50px;
+     /* width: 100vw; */
+}
+ .parallax__layer__1 {
+	 transform: translateZ(-500px) scale(3);
+     top: -450px;
+}
+ .parallax__layer__2 {
+	 transform: translateZ(-400px) scale(2.1);
+     left: 80px;
+     top: -350px;
+     bottom: 40px;
+
+}
+ .parallax__layer__3 {
+	 transform: translateZ(-350px) scale(2.5);
+     margin-left: 150px;
+     margin-bottom: 200px;
+}
+
+ .parallax__layer__4 {
+	 transform: translateZ(-350px) scale(2.5);
+        top: -400px;
+}
+.parallax__layer__4 img{
+    margin-left: 1150px;
+}
+ .parallax__layer__5 {
+	 transform: translateZ(-300px) scale(2);
+     top: -380px;
+}
+.parallax__layer__5 img{
+    margin-left: 1050px;
+}
+ .parallax__layer__6 {
+	 transform: translateZ(-300px) scale(2);
+     top: -350px;
+}
+.parallax__layer__6 img{
+    margin-left: 880px;
+}
+.parallax__layer__7 {
+    transform: translateZ(-250px) scale(2);
+    top: -500px;
+}
+.parallax__layer__7 img{
+    margin-left: 50px;
+}
+.parallax__layer__8 {
+    transform: translateZ(-250px) scale(2);
+    top: -150px;
+}
+.parallax__layer__8 img{
+    
+}
+.parallax__layer__9 {
+    transform: translateZ(-100px) scale(1.5);
+    top: -4000px;
+}
+.parallax__layer__9 img{
+    margin-left: 10px;
+}
