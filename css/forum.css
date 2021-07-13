@@ -2,8 +2,8 @@
  * {
 	 box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap');
 html{
-
 }
 body {
     background: linear-gradient(37deg, #F3DDBD 4%, #748AA3 94%);
@@ -12,7 +12,16 @@ body {
     background: -o-linear-gradient(37deg, #F3DDBD 4%, #748AA3 94%);
 	width: 100vw;
 	overflow-x: hidden;
+	font-family: 'Noto Sans TC', sans-serif;
 }
+/* header */
+.navbarItem2{
+    font-weight: bold;
+}
+.head-navbarItem{
+    color: #fffaed;
+}
+
  .parallax {
 	 perspective: 300px;
 	 height: 100vh;
