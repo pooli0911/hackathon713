@@ -2,8 +2,8 @@
  * {
 	 box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap');
 html{
-
 }
 body {
     background: linear-gradient(37deg, #F3DDBD 4%, #748AA3 94%);
@@ -12,6 +12,32 @@ body {
     background: -o-linear-gradient(37deg, #F3DDBD 4%, #748AA3 94%);
 	width: 100vw;
 	overflow-x: hidden;
+	font-family: 'Noto Sans TC', sans-serif;
+}
+/* header */
+.head-navbar{
+    display:flex;
+    position:absolute;
+    margin-top:1.5%;
+    right:3%;
+    width:30%;
+    justify-content: space-around;
+}
+.head-navbarItem{
+    position: relative;
+    color: #fffaed;
+    z-index:5;
+    text-decoration: none;
+    font-size:18px;
+    margin-right:3%;
+    text-align: center;
+    cursor: pointer;
+}
+.head-navbarItem:hover{
+	font-weight: bold;
+}
+.navbarItem2{
+    font-weight: bold;
 }
  .parallax {
 	 perspective: 300px;
