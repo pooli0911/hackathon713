@@ -4,7 +4,7 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap');
 html{
-    
+    width: 100vw;
 }
 body {
     background: linear-gradient(33deg, #ECE88D 14%, #25B7DB 100%);
@@ -28,4 +28,7 @@ body {
     position:absolute;
     left:0;
     top:0;
+}
+.img{
+    width: 100%;
 }
