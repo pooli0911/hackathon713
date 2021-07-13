@@ -12,11 +12,10 @@ body {
     background: -o-linear-gradient(37deg, #F3DDBD 4%, #748AA3 94%);
 	width: 100vw;
 	overflow-x: hidden;
-	font-family: 'Noto Sans TC', sans-serif;
 }
 /* header */
 .navbarItem2{
-    font-weight: bold;
+    font-weight: 500;
 }
 .head-navbarItem{
     color: #fffaed;
@@ -114,5 +113,9 @@ section{
 	margin-left: 50px;
 }
 .section1{
-	color: aliceblue;
+	color: #fffaed;
+}
+.forum-title{
+	font-size: 28px;
+	margin-left: 82.5%;
 }

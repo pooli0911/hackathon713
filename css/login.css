@@ -14,21 +14,26 @@ body {
 	width: 100vw;
 	overflow-x: hidden;
     overflow-y: hidden;
-	font-family: 'Noto Sans TC', sans-serif;
 }
 
 .navbarItem4{
-    font-weight: bold;
+    font-weight: 500;
 }
 .head-navbarItem{
     color: #fffaed;
 }
 .login-img{
     width:100vw;
-    height:100vh;
     position:absolute;
     left:0;
     top:0;
+}
+.login_form{
+    background-color: aliceblue;
+    border-radius: 20px;
+    margin-left: 50%;
+    margin-top: 10%;
+    position: absolute;
 }
 .img{
     width: 100%;
