@@ -1,16 +1,16 @@
 $(function () {
     $("#page_top").hide();
-    $(window).on("scroll", function () {
-
-        if ($(this).scrollTop() > 100) {
+    $('.parallax').on("scroll", function () {
+        console.log($('.parallax').scrollTop())
+        if ($('.parallax').scrollTop() > 100) {
             $('#page_top').fadeIn("slow");
         } else {
             $('#page_top').fadeOut("slow");
         }
 
 
-        scrollHeight = $(document).height();
-        scrollPosition = $(window).height() + $(window).scrollTop();
+        scrollHeight = $('.parallax').height();
+        scrollPosition = $('.parallax').height() + $('.parallax').scrollTop();
         footHeight = $("footer").innerHeight();
 
         if (scrollHeight - scrollPosition <= footHeight) {
@@ -27,7 +27,7 @@ $(function () {
     });
 
     $('#page_top a').on('click', function () {
-        $('body, html').animate({
+        $('.parallax').animate({
             scrollTop: 0
         }, 500);
         return false;
