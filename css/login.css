@@ -25,10 +25,16 @@ body {
 }
 .login-img{
     width:100vw;
-    height:100vh;
     position:absolute;
     left:0;
     top:0;
+}
+.login_form{
+    background-color: aliceblue;
+    border-radius: 20px;
+    margin-left: 50%;
+    margin-top: 10%;
+    position: absolute;
 }
 .img{
     width: 100%;
