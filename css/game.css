@@ -48,62 +48,59 @@ body {
 	 bottom: 0;
 }
  .parallax__cover {
-	 /* background-color: #54676E; */
+	 background-color: #7dc6c6;
 	 display: block;
 	 position: absolute;
-	 top: 200%;
+	 top: 170%;
 	 left: 0;
 	 right: 0;
 	 height: 2000px;
-	 z-index: 1;
+	 z-index: 0;
 	 
 }
  .parallax__layer__0 {
-	 transform: translateZ(-550px) scale(2.3) translateX(-180px)translateY(200px);
+	 transform: translateZ(-550px) scale(3.2) translateX(10px)translateY(200px);
      /* width: 100vw; */
 }
 .parallax__layer__0 img{
-    margin-bottom: 300px;
+    margin-bottom: 500px;
     
 }
  .parallax__layer__1 {
-	 transform: translateZ(-500px) scale(3)translateY(-210px)translateX(140px);
+	 transform: translateZ(-500px) scale(3)translateY(-210px)translateX(300px);
      
 }
 
  .parallax__layer__2 {
-	 transform: translateZ(-400px) scale(2.1)translateX(330px);
-     left: 80px;
-     top: 430px;
-     bottom: 40px;
+	 transform: translateZ(-400px) scale(2.8)translateY(110px) translateX(40px);
+
 
 }
  .parallax__layer__3 {
-	 transform: translateZ(-350px) scale(2.5)translateY(100px)translateX(1000px);
+	 transform: translateZ(-350px) scale(2.8)translateY(70px)translateX(900px);
 
 }
 
  .parallax__layer__4 {
-	 transform: translateZ(-300px) scale(2)translateY(350px)translateX(50px);
+	 transform: translateZ(-300px) scale(2)translateY(350px)translateX(0px);
 
 }
 
  .parallax__layer__5 {
-	 transform: translateZ(-300px) scale(2)translateY(-240px);
+	 transform: translateZ(-200px) scale(2)translateY(180px) translateX(620px);
      
 }
 
  .parallax__layer__6 {
-	 transform: translateZ(-200px) scale(1.8)translateY(380px)translateX(50px);
+	 transform: translateZ(-150px) scale(1.8)translateY(260px)translateX(450px);
 
 }
 
 .parallax__layer__7 {
-    transform: translateZ(-100px) scale(1.5)translateY(270px)translateX(1150px);
+    transform: translateZ(-100px) scale(2.1)translateY(140px)translateX(280px);
     
 }
-
-.parallax__layer__8 {
-    transform: translateZ(-100px) scale(1.6)translateY(260px)translateX(130px);
-
+section{
+    margin-top: 400px;
+    margin-left: 50px;
 }
