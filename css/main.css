@@ -71,7 +71,7 @@ body {
  .parallax__layer__2 {
 	 transform: translateZ(-400px) scale(2.1);
      left: 80px;
-     top: -350px;
+     top: -500px;
      bottom: 40px;
 
 }
@@ -104,7 +104,7 @@ body {
 }
 .parallax__layer__7 {
     transform: translateZ(-250px) scale(2);
-    top: -500px;
+    top: -550px;
 }
 .parallax__layer__7 img{
     margin-left: 50px;
