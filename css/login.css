@@ -91,6 +91,9 @@ body {
     font-size: 32px ;
     font-family: 'Kosugi Maru', sans-serif;
 }
+.btn-primary:hover{
+    background-color: #e6ddc8 !important;
+}
 .or-text{
     color:#FFFAED;
     text-align:center;
