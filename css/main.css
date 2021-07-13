@@ -35,6 +35,9 @@ body {
 .head-navbarItem:hover{
 	font-weight: bold;
 }
+.navbarItem1{
+    font-weight: bold;
+}
 
 /* parallax */
  .parallax {
@@ -197,6 +200,14 @@ section{
 
 
 /* footer */
+#page_top {
+	/* display: none; */
+    position: fixed;
+	width: 10%;
+    right: 2%;
+    bottom: 10%;
+    z-index: 5000;
+}
 .footer-line{
 	width: 80%;
 	height: 3px;
