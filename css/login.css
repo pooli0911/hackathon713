@@ -88,6 +88,9 @@ body {
     color:#FFFAED;
 }
 .log_btn{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
     margin-top:20px;
     text-align: center;
 }
@@ -110,7 +113,15 @@ body {
     text-align:center;
     margin-top:10px;
 }
+.log{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
 .google{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
     font-size:15px !important;
 }
 .img{
