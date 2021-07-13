@@ -197,3 +197,51 @@ section{
 	width: 52%;
 	font-size: 20px;
 }
+
+
+/* footer */
+.footer-line{
+	width: 80%;
+	height: 3px;
+	border-top: solid #fffaed 3px;
+	margin: auto;
+	margin-top: 15%;
+}
+.resources-title{
+	font-weight: bold;
+	font-size: 16px;
+}
+.footer-text{
+	color: #FFFAED;
+	margin-left: 17.5%;
+	margin-top: 2%;
+	display: flex;
+}
+.related-resources ul li {
+	list-style-type:none;
+	line-height: 30px;
+	font-size: 14px;
+	margin-left: -22%;
+}
+.related-resources ul li a{
+	text-decoration: none;
+	color: #FFFAED;
+}
+.related-resources ul li a:hover{
+	color: #e6ddc8;
+}
+.contact-icon{
+	display: flex;
+	margin-left: 50%;
+	margin-top: 3%;
+}
+.insta{
+	cursor: pointer;
+}
+.insta:hover, .faceb:hover{
+	color: #e6ddc8;
+}
+.faceb{
+	cursor: pointer;
+	margin-left: 60%;
+}
