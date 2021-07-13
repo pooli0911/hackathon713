@@ -7,7 +7,7 @@ $(function () {
         } else {
             $('#page_top').fadeOut("slow");
         }
-        if ($('.parallax').scrollTop() > 700) {
+        if ($('.parallax').scrollTop() > 300) {
             $('.head-navbar').fadeOut("slow");
         } else {
             $('.head-navbar').fadeIn("slow");
