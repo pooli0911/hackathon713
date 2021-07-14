@@ -44,4 +44,24 @@ $(function () {
         }, 500);
         return false;
     });
+
+    
+    $(".hamburger").click(function(){
+      $(this).toggleClass("is-active");
+    });
+    $(".hamburger").click(function () {
+        $(".rwd-navbar").toggleClass(".pc_menu_click");
+        if ($(".rwd-navbar").hasClass(".pc_menu_click")) {
+            $(".rwd-navbar").css('transform', 'translate(-222.5px,0)');
+            $(".rwd-navbar").css('transition-duration', '0.5s');
+            $(".rwd-navbar").css('transition-timing-function', 'ease-in-out');
+
+        } else {
+            $(".rwd-navbar").css('transform', 'translate(222.5px,0)');
+            $(".rwd-navbar").css('transition-duration', '0.5s');
+            $(".rwd-navbar").css('transition-timing-function', 'ease-in-out');
+
+        }
+    });
+      
 })

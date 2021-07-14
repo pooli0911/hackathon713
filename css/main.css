@@ -218,6 +218,7 @@ section{
 
 /* RWD */
 @media (max-width: 770px) {
+	
 	.main-button{
 		width: 130px;
 		height: 40px;
@@ -279,4 +280,6 @@ section{
 	.graph-button{
 		margin-top: 10%;
 	}
+	
 }
+
