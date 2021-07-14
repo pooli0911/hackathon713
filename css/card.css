@@ -28,6 +28,9 @@ body {
    object-fit:cover;
    object-position:0% 100%;
 }
+.head-navbar{
+   z-index: 1000;
+}
 .head-navbarItem{
    font-weight: 300;
    color: #FFFAED;
