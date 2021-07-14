@@ -73,6 +73,9 @@ $(function () {
       $('#game-1-btn').click(function(event) {
         gameSwitch(1)
       });
+      $('#game-2-btn').click(function(event) {
+        gameSwitch(2)
+      });
 })
 
 function gameBtnInit(){
@@ -154,6 +157,67 @@ function gameBtnInit(){
     $('#btn-1-7-4').click(function(event) {
         checkAns(1,7,3,0);
       });
+    /////////
+    $('#btn-2-1-1').click(function(event) {
+      checkAns(2,1,1,0);
+    });
+    $('#btn-2-1-2').click(function(event) {
+      checkAns(2,1,2,0);
+    });
+    $('#btn-2-1-3').click(function(event) {
+      checkAns(2,1,3,1);
+    });
+    $('#btn-2-1-4').click(function(event) {
+      checkAns(2,1,3,0);
+    });
+    $('#btn-2-2-1').click(function(event) {
+      checkAns(2,2,1,0);
+    });
+    $('#btn-2-2-2').click(function(event) {
+      checkAns(2,2,2,1);
+    });
+    $('#btn-2-2-3').click(function(event) {
+      checkAns(2,2,3,0);
+    });
+    $('#btn-2-2-4').click(function(event) {
+      checkAns(2,2,3,0);
+    });
+    $('#btn-2-3-1').click(function(event) {
+      checkAns(2,3,1,0);
+    });
+    $('#btn-2-3-2').click(function(event) {
+      checkAns(2,3,2,0);
+    });
+    $('#btn-2-3-3').click(function(event) {
+      checkAns(2,3,3,0);
+    });
+    $('#btn-2-3-4').click(function(event) {
+      checkAns(2,3,3,1);
+    });
+    $('#btn-2-4-1').click(function(event) {
+      checkAns(2,4,1,1);
+    });
+    $('#btn-2-4-2').click(function(event) {
+      checkAns(2,4,2,0);
+    });
+    $('#btn-2-4-3').click(function(event) {
+      checkAns(2,4,3,0);
+    });
+    $('#btn-2-4-4').click(function(event) {
+      checkAns(2,4,3,0);
+    });
+    $('#btn-2-5-1').click(function(event) {
+      checkAns(2,5,1,0);
+    });
+    $('#btn-2-5-2').click(function(event) {
+      checkAns(2,5,2,0);
+    });
+    $('#btn-2-5-3').click(function(event) {
+      checkAns(2,5,3,0);
+    });
+    $('#btn-2-5-4').click(function(event) {
+      checkAns(2,5,3,1);
+    });
 }
 function checkAns(n1,n2,n3,isCorrect) {
     $('#game-'+n1+'-'+n2).modal('hide');
@@ -162,7 +226,7 @@ function checkAns(n1,n2,n3,isCorrect) {
       $('#answer-'+n1+'-'+n2).addClass('circle-view');
       
     }else{
-      $('#game-fail').modal('show');
+      $('#game-fail-'+n1).modal('show');
     }
   }
 
@@ -177,7 +241,7 @@ let initMain =()=>{
 function gameSwitch(n) {
     $('.game-play-home').hide();
     $('.game-play-1').hide();
-    // $('.game-2').hide();
+    $('.game-play-2').hide();
     // $('.game-3').hide();
     // $('.game-4').hide();
     // $('.game-5').hide();
