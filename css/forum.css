@@ -119,3 +119,19 @@ section{
 	font-size: 28px;
 	margin-left: 82.5%;
 }
+.section2{
+	display: flex;
+	flex-wrap: wrap;
+}
+.card{
+	background-color: grey;
+	border-radius: 50px;
+}
+.card_link{
+}
+.card_img{
+}
+.card_title{
+}
+.card_info{
+}
