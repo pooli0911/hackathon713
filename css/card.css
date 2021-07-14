@@ -86,7 +86,7 @@ body {
 }
 
 .form-check-label{
-   color:#414761;
+   color:#414761 !important;
    font-size: 12px;
    line-height: 30px;
    padding-top:0px !important;
@@ -107,6 +107,9 @@ body {
    color:#414761;
 }
 .log_btn{
+   display: flex !important;
+   justify-content: center;
+   align-items: center;
    margin-top:5px;
    text-align: center;
 }
@@ -129,7 +132,16 @@ body {
    text-align:center;
    margin-top:10px;
 }
+.log{
+   display: flex !important;
+   justify-content: center;
+   align-items: center;
+   font-size: 15px!important;
+}
 .google{
+   display: flex !important;
+   justify-content: center;
+   align-items: center;
    font-size:15px !important;
 }
 .img{

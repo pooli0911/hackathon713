@@ -26,6 +26,7 @@ document.getElementById("google").onclick=()=>{
         // The signed-in user info.
         var user = result.user;
         console.log(JSON.stringify(result.user.displayName))
+        window.location="./"
     }).catch((error) => {
         // Handle Errors here.
         var errorCode = error.code;
@@ -47,6 +48,7 @@ if(document.getElementById("login")){
                 // Signed in
                 var user = userCredential.user;
                 console.log(userCredential)
+                window.location="./"
             })
             .catch((error) => {
                 var errorCode = error.code;
@@ -65,6 +67,7 @@ if(document.getElementById("signup")){
                 // Signed in
                 var user = userCredential.user;
                 console.log(userCredential)
+                window.location="./"
             })
             .catch((error) => {
                 var errorCode = error.code;
