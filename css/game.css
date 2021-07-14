@@ -6,7 +6,6 @@ html{
 }
 body {
 	width: 100vw;
-
 	overflow-x: hidden;
 	font-family: 'Noto Sans TC', sans-serif;
 }
@@ -16,6 +15,10 @@ body {
 }
 .head-navbarItem{
     color: #fffaed!important;
+}
+.head-navbarItem:hover{
+	font-weight: 500;
+	text-decoration: none;
 }
 
  .parallax {
