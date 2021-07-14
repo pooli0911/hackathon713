@@ -67,6 +67,11 @@
 
         <div class="parallax__cover">
             <section class=" section1 ">
+                <div class="search">
+                    <!-- <div class="link-top"></div> -->
+                    <p class="link-right"><i class="fas fa-search"></i></p>
+                    <!-- <div class="link-top"></div> -->
+                </div>
                 <div class="forum-title">
                     <h3>線<br>上<br>論<br>壇<br>／</h3>
                 </div>
@@ -115,18 +120,24 @@
 <template id="template0" style="display: none;">
     <div class="card" id="addnew">+</div>
 </template>
+
 <template id="template2" style="display: none;">
-    <div id="back"><</div>
+    <div id="back">
+        <i class="fas fa-angle-left arrow"></i>
+    </div>
     <div class="card">
         <div class="card_link">
-            <img class="card_img" src="URL_HERE" alt="ALT_HERE">
+            <img class="card_img article-img" src="URL_HERE" alt="ALT_HERE">
             <h1 class="card_title">TITLE_HERE</h1>
             <p class="card_info">INFO_HERE</p>
         </div>
     </div>
 </template>
+
 <template id="template3" style="display: none;">
-    <div id="back"><</div>
+    <div id="back">
+        <i class="fas fa-angle-left arrow"></i>
+    </div>
     <div class="card">
         <div class="card_link">
             <img class="card_img" src="URL_HERE" alt="ALT_HERE">
@@ -135,6 +146,7 @@
         </div>
     </div>
 </template>
+
 <script src="./js/jquery-1.9.0.min.js"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
     integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
