@@ -123,3 +123,39 @@ section{
 	font-size: 28px;
 	margin-left: 82.5%;
 }
+.game-box-section{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-right: 50px;
+}
+.game-box{
+	background: rgb(197, 197, 197);
+	background-image: url(../image/game/森林.png);
+	height: 600px;
+	width: 1070px;
+	position: relative;
+}
+.gameimg{
+	position: absolute;
+	left: 0;
+	top: 0;
+	cursor: pointer;
+	transition: all 0.1s ease-out
+}
+.gameimg:hover{
+	transform: scale(1.2);
+}
+.img01{
+left: 80px;
+top: 160px;
+}
+.img02{
+	left: 900px;
+	top: 280px;
+}
+.img03{
+	left: 700px;
+	top: 70px;
+}
