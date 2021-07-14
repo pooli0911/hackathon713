@@ -57,6 +57,9 @@
                     <h3>線<br>上<br>論<br>壇<br>／</h3>
                 </div>
             </section>
+            <section class="section2">
+                <div class="card" id="addnew">+</div>
+            </section>
             <div class="footer">
                 <div class="footer-line"></div>
                 <div class="footer-text">
@@ -87,6 +90,15 @@
 
 
 </body>
+<template id="card_template" style="display: none;">
+    <div class="card">
+        <div class="card_link">
+            <img class="card_img" src="URL_HERE" alt="ALT_HERE">
+            <h1 class="card_title">TITLE_HERE</h1>
+            <p class="card_info">INFO_HERE</p>
+        </div>
+    </div>
+</template>
 <script src="./js/jquery-1.9.0.min.js"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
     integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
@@ -94,6 +106,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-storage.js"></script>
     <script src="./js/firebase.js"></script>
     <script src="./js/script.js"></script>
 
