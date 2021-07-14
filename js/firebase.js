@@ -75,7 +75,17 @@ if(document.getElementById("signup")){
     }
 }
 var card=document.getElementById("card_template");
-if(card!=null){
+function preparecards(){
+    let adder=document.createElement("div")
+    adder.innerHTML=document.getElementById("template0").innerHTML
+    document.getElementsByClassName("section2")[0].appendChild(adder)
+    document.getElementById("addnew").onclick=()=>{
+        document.getElementsByClassName("section2")[0].innerHTML=document.getElementById("template2").innerHTML
+        document.getElementById("back").onclick=()=>{
+            document.getElementsByClassName("section2")[0].innerHTML=null
+            preparecards();
+        }
+    }
     alldocRef.get().then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
             let temp=document.createElement("div")
@@ -83,18 +93,34 @@ if(card!=null){
             temp.innerHTML=card.innerHTML
             temp.innerHTML=temp.innerHTML.replace('TITLE_HERE',doc.data().uid);
             temp.innerHTML=temp.innerHTML.replace('INFO_HERE',doc.data().info);
+            let imgurl
             storageRef.child(doc.data().imgName).getDownloadURL()
             .then((url) => {
+                imgurl=url
                 temp.innerHTML=temp.innerHTML.replace('URL_HERE',url);
             })
             .catch((error) => {
                 console.log(error)
             });
             document.getElementsByClassName("section2")[0].appendChild(temp)
+            $('#'+temp.id).on('click',()=>{
+                let temp=document.getElementById("template3")
+                temp.innerHTML=temp.innerHTML.replace('TITLE_HERE',doc.data().uid);
+                temp.innerHTML=temp.innerHTML.replace('INFO_HERE',doc.data().info);
+                temp.innerHTML=temp.innerHTML.replace('URL_HERE',imgurl);
+                document.getElementsByClassName("section2")[0].innerHTML=temp.innerHTML
+                document.getElementById("back").onclick=()=>{
+                    document.getElementsByClassName("section2")[0].innerHTML=null
+                    preparecards();
+                }
+            });
             // doc.data() is never undefined for query doc snapshots
             console.log(doc.id, JSON.stringify(doc.data().uid));
         });
     });
+}
+if(card!=null){
+    preparecards();
 }
 firebase.auth().onAuthStateChanged((user) => {
     if (user) {
