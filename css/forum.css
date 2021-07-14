@@ -6,6 +6,7 @@
 html{
 }
 body {
+	margin: 8px !important;
     background: linear-gradient(37deg, #F3DDBD 4%, #748AA3 94%);
     background: -moz-linear-gradient(37deg, #F3DDBD 4%, #748AA3 94%);
     background: -webkit-linear-gradient(37deg, #F3DDBD 4%, #748AA3 94%);
