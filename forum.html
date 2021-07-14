@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/head-foot.css">
     <link rel="stylesheet" href="./css/forum.css">
+    <link rel="stylesheet" href="./css/loader.css">
     <style>
         .mySlides {
             display: none
@@ -30,6 +31,7 @@
 </head>
 
 <body>
+    <div id="loader" align="center"><img src="./image/loader.gif"></div>
     <div class="header">
         <a href="index.html" class="logo"><img src="./image/logo-others.png"></a>
         <div class="head-navbar">
@@ -229,6 +231,30 @@
         x[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " w3-white";
     }
+</script>
+<script type="text/javascript">
+    var loader;
+    function loadNow(opacity) {
+        if (opacity <= 0) {
+            displayContent();
+        }
+        else {
+            loader.style.opacity = opacity;
+            window.setTimeout(function () {
+                loadNow(opacity - 0.1)
+            }, 100);
+        }
+    }
+
+    function displayContent() {
+        loader.style.display = 'none';
+        document.getElementById('content').style.display = 'block';
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        loader = document.getElementById('loader');
+        loadNow(1);
+    });
 </script>
 
 </html>
