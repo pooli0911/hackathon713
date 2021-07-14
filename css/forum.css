@@ -247,16 +247,82 @@ section{
 .w3-badge{
 	margin-top:10%;
 }
+.flex-change{
+	width:50vw;
+}
+.userinfo{
+	display:flex;
+}
+.userinfo-text{
+	margin-left:5%;
+	color:#FFFAED;
+}
+.user_img{
+	margin-top:75%;
+}
+.title{
+	display:block;
+	margin-top:-5%;
+}
+.info{
+	display:block;
+}
 
-/* .card{
-	margin:auto;
-} */
+.title-input{
+	width:100%;
+	background-color:#54676E;
+	border: #FFFAED solid 2px;
+}
+.title-text{
+	color:#FFFAED;
+	font-size: 24px;
+    line-height: 28px;
+}
+.info-input{
+	width:100%;
+	height:100px;
+	background-color:#54676E;
+	border: #FFFAED solid 2px;
+}
+.photo{
+	display:block;
+}
+.carde{
+	margin-left:0;
+}
+.location{
+	display:block;
+}
+.location-input{
+	width:100%;
+	background-color:#54676E;
+	border: #FFFAED solid 2px;
+}
+.submit_button{
+	width: 170px;
+	height: 55px;
+	background-color: #fffaed;
+	border-radius: 30px;
+	color: #3C4522;
+	text-align: center;
+	line-height: 55px;
+	font-size: 16px;
+	cursor: pointer;
+	margin-top:10%;
+	margin-left:77%;
+	margin-right:0;
+}
+.submit_button:hover{
+	background-color: #e6ddc8;
+}
+
+
 
 @media (max-width: 2000px) {
 	.section2{
 		margin-left: 10%;
 		width:70%;
-		display: flex;
+		/* display: flex; */
 		flex-wrap: wrap;
 	}
 }
@@ -264,7 +330,7 @@ section{
 	.section2{
 		margin-left: 30%;
 		width:60%;
-		display: flex;
+		/* display: flex; */
 		flex-wrap: wrap;
 	}
 	
@@ -273,7 +339,7 @@ section{
 	.section2{
 		margin-left: 50%;
 		width:30%;
-		display: flex;
+		/* display: flex; */
 		flex-wrap: wrap;
 	}
 	
@@ -282,7 +348,7 @@ section{
 	.section2{
 		margin-left: 60%;
 		width:40%;
-		display: flex;
+		/* display: flex; */
 		flex-wrap: wrap;
 	}
 	

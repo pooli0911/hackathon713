@@ -141,25 +141,34 @@
     <div class="card" id="addnew">+</div>
 </template>
 
-<template id="template2" style="display: none;">
+<template id="template2" style="display: block;">
+    <div class="flex-change">
     <div id="back">
         <i class="fas fa-angle-left arrow"></i>
     </div>
     <div class="userinfo">
-        <img class="user_img" src="./image/user.png" alt="ALT_HERE">
-        <h1 id="user_name">NAME_HERE</h1>
-        <p id="current_time">TIME_HERE</p>
+        <div>
+          <img class="user_img" src="./image/user.png" alt="ALT_HERE">
+        </div>
+        <div class="userinfo-text">
+          <h1 id="user_name">NAME_HERE</h1>
+          <p id="current_time">TIME_HERE</p>
+        </div>
     </div>
     <div class="title">
-        <label for="title">標題</label>
-        <input type="text" name="title" id="title">
+        <p class="title-text">標題</p>
+        <!-- <label for="title">標題</label> -->
+        <input class="title-input" type="text" name="title" id="title">
     </div>
     <div class="info">
-        <label for="info">內文</label>
-        <input type="text" name="info" id="info">
+        <p class="title-text">內文</p>
+        <!-- <label for="info">內文</label> -->
+        <textarea class="form-control info-input" type="text" name="info" id="info" rows="3"></textarea>
+        <!-- <input class="info-input" type="text" name="info" id="info"> -->
     </div>
     <div class="photo">
-        <label for="myfile">添加照片（至多三張）</label>
+        <p class="title-text">添加照片（至多三張）</p>
+        <!-- <label for="myfile">添加照片（至多三張）</label> -->
         <div>
             <input type="file" class="carde" name="photo" id="photo" style="font-size: 0px;opacity: 0;position: absolute;cursor: pointer;">
             <div class="carde" id="addnewphoto">+</div>
@@ -169,11 +178,13 @@
         </div>
     </div>
     <div class="location">
-        <label for="location">地點</label>
-        <input type="text" name="location" id="location">
+        <p class="title-text">新增地點</p>
+        <!-- <label for="location">地點</label> -->
+        <input class="location-input" type="text" name="location" id="location">
     </div>
     <div class="submit_button" id="submit">
         送出
+    </div>
     </div>
 </template>
 
