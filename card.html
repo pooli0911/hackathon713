@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/head-foot.css">
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/card.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
@@ -26,7 +26,7 @@
         <img src="./image/login-background.png" id="login-img" />
     </div>
     <div class="login-title">
-        <div>登<br>入<br>／</div>
+        <div>註<br>冊<br>／</div>
     </div>
     <div class="login_form">
         <div class="id_form">
@@ -35,6 +35,16 @@
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">電子郵件</label>
                         <input type="text" class="form-control" id="email" aria-describedby="emailHelp">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="name_form">
+            <div class="name_box">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">使用者名稱</label>
+                        <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
                     </div>
                 </form>
             </div>
@@ -49,19 +59,29 @@
                 </form>
             </div>
         </div>
-        <div class="form_notices">
-            <a href="#" class="forget">忘記密碼？</a>
+        <div class="number_form_check">
+            <div class="number_box_check">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">再次輸入密碼</label>
+                        <input type="password" class="form-control" id="password-check" aria-describedby="emailHelp">
+                    </div>
+                </form>
+            </div>
         </div>
+        <!-- <div class="form_notices">
+            <a href="#" class="forget">忘記密碼？</a>
+        </div> -->
         <div class="form_notices">
-            <a href="./card.html" class="install">還沒有帳號？點擊註冊</a>
+            <a href="./login.html" class="install">已經有帳號？點擊登入</a>
         </div>
         <div class="log_btn">
-            <div id="signin" class="btn btn-primary log">登入</div>
+            <button type="submit" id="signin" class="btn btn-primary log">註冊</button>
         </div>
         <p class="or-text">或</p>
         <div class="log_btn">
-            <div id="google" class="btn btn-primary google"><img src="./image/google.png">
-                使用Google帳號</div>
+            <button type="submit" id="signin" class="btn btn-primary google"><img src="./image/google.png">
+                使用Google帳號</button>
         </div>
     </div>
     <div id="page_top">
@@ -77,11 +97,7 @@
 <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
     integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
     crossorigin="anonymous"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
-    <script src="./js/firebase.js"></script>
-    <script src="./js/script.js"></script>
+<script src="./js/script.js"></script>
 
 
 
