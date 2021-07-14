@@ -23,7 +23,7 @@ body {
     letter-spacing: 0.11rem !important;
 }
 #login-img{
-    width: 100%;
+    width: 100%;cit
     max-height: 100vh;
     object-fit:cover;
     object-position:0% 100%;
@@ -133,6 +133,7 @@ body {
     display: flex !important;
     justify-content: center;
     align-items: center;
+    font-size: 15px!important;
 }
 .google{
     display: flex !important;
