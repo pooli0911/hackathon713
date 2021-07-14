@@ -154,3 +154,6 @@ body {
     object-fit:cover;
     object-position:0% 100%;
 }
+.logo{
+    z-index: 20;;
+}
