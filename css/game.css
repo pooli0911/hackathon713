@@ -1,4 +1,3 @@
-
  * {
 	 box-sizing: border-box;
 }
@@ -165,12 +164,114 @@ width: 1070px;
 	position: relative;
 	border: #E9F3FA 3px solid;
 }
-.game-box-a{
-	background-image: url(../image/game/森林.png);
+.game-play-home{
+	background-image: url(../image/game/homebg.png);
 	width: 100%;
 	height: 100%;
 	background-size: cover;
+
+	position: absolute;
+	display: none;
 }
+.game-play-1{
+	background-image: url(../image/game/1/溪流.png);
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	
+	position: absolute;
+	display: none;
+
+}
+.game-box-b{}
+.game-box-c{}
+.game-box-c{}
+/* ----------game-box-home------------- */
+.game-play-home-flex{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+.game-home-info{
+	width: 400px;
+	height: 500px;
+	background: rgba(230, 229, 229, 0.815);
+	border-radius: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+}
+.game-home-info h2{
+	color: #46443f;
+	font-weight: 500!important;
+	margin-top: 50px;
+}
+.game-home-info h5{
+	color: #46443f;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	line-height: 35px;
+}
+.game-home-r-flex{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.mask-box{
+	position: relative;
+	
+}
+.home-item{
+	width: 270px;
+	height: 200px;
+	background: rgba(121, 121, 121, 0.767);
+	border-radius: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border: #fffaed 2px solid;
+
+}
+.home-a{
+
+
+}
+.home-a-mask{
+	position: absolute;
+	width: 270px;
+	height: 200px;
+	background: rgba(236, 233, 233, 0.692);
+	top: 10px;
+	left: 10px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	
+}
+.home-game-title{
+	font-size: 36px;
+	color: #46443f;
+	font-weight: 500;
+}
+.home-b{
+
+}
+.home-c{
+
+}
+.home-d{
+
+}
+/* ------------game-box-1-------------- */
 .gameimg{
 	position: absolute;
 	left: 0;
@@ -186,13 +287,30 @@ left: 80px;
 top: 160px;
 }
 .img02{
-	left: 900px;
-	top: 280px;
+	left: 580px;
+	top: 390px;
 }
 .img03{
 	left: 700px;
 	top: 70px;
 }
+.img04{
+	left: 850px;
+	top: 170px;
+}
+.img05{
+	top: 360px;
+	left: 13px;
+}
+.img06{
+	left: 780px;
+	top: 450px;
+}
+.img07{
+	left: 600px;
+	top: 270px;
+}
+/* -------------modal---------- */
 .modalself{
 	position: absolute;
 	left: 0;
@@ -282,12 +400,84 @@ top: 160px;
 	position: absolute;
 	z-index: 5;
 }
-.circle-1-1-1{
+.circle-1-1{
 	left: 110px;
 	top: 280px;
 	display: none;
 	
 }
 .circle-view{
-	display: block;
+	display: block!important;
+}
+.game-home-icon{
+	position: absolute;
+	z-index: 5;
+	width: 52px;
+	height: 48px;
+	right: 5px;
+	bottom: 5px;
+	cursor: pointer;
+}
+
+/* game-1-2 */
+#btn-1-2-1,#btn-1-2-2,#btn-1-2-3{
+	font-size: 18px;
+}
+.circle-1-2{
+	left: 570px;
+	top: 380px;
+	display: none;
+
+	
+}
+/* game-1-3 */
+#btn-1-3-1,#btn-1-3-2,#btn-1-3-3,#btn-1-3-4{
+	font-size: 18px;
+}
+.circle-1-3{
+	left: 750px;
+	top: 110px;
+display: none;
+
+	
+}
+/* game-1-4 */
+#btn-1-4-1,#btn-1-4-2,#btn-1-4-3,#btn-1-4-4{
+	font-size: 16px;
+	width: 400px;
+}
+.circle-1-4{
+	left: 850px;
+	top: 200px;
+display: none;
+
+	
+}
+/* game-1-5 */
+.circle-1-5{
+	left: 80px;
+	top: 450px;
+	display: none;
+
+	
+}
+/* game-1-6 */
+.circle-1-6{
+	left: 850px;
+	top: 450px;
+	display: none;
+
+	
+}
+/* game-1-7 */
+#btn-1-7-1,#btn-1-7-2,#btn-1-7-3,#btn-1-7-4{
+	font-size: 16px;
+
+}
+.circle-1-7{
+	left: 640px;
+	top: 270px;
+	display: none;
+
+	
 }
