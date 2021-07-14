@@ -43,13 +43,13 @@ body {
 }
 .scroll-text{
 	color: aliceblue;
-	font-size: 18px;
+	font-size: 19px;
 	font-weight: bold;
 }
 .scroll-img{
 	height: 50px;
 	width: 50px;
-	margin-left: 12%;
+	margin-left: 11.5%;
 }
 
 
@@ -144,5 +144,21 @@ body {
 	}
 	.faceb{
 		margin-left: 10%;
+	}
+	.scroll-down{
+		position: absolute;
+		left: 48%;
+		top: 80%;
+		z-index: 4;
+	}
+	.scroll-text{
+		color: aliceblue;
+		font-size: 19px;
+		font-weight: bold;
+	}
+	.scroll-img{
+		height: 40px;
+		width: 40px;
+		margin-left: 18%;
 	}
 }
