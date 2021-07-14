@@ -25,6 +25,25 @@ body {
 .head-navbarItem:hover{
 	font-weight: 500;
 }
+/* scroll */
+.scroll-down{
+	position: absolute;
+	left: 48%;
+	top: 80%;
+	z-index: 4;
+}
+.scroll-text{
+	color: aliceblue;
+	font-size: 18px;
+	font-weight: bold;
+}
+.scroll-img{
+	height: 50px;
+	width: 50px;
+	margin-left: 12%;
+}
+
+
 
 /* footer */
 #page_top {
