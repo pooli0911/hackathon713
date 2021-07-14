@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap');
 a:hover{
    text-decoration: none !important;
+   color: #FFFAED !important;
 }
 html{
    width: 100vw;
@@ -29,7 +30,7 @@ body {
 }
 .head-navbarItem{
    font-weight: 300;
-   color: #414761;
+   color: #FFFAED;
 }
 .navbarItem4{
    font-weight: 500;
