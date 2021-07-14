@@ -31,6 +31,12 @@ body {
 .head-navbar{
     z-index: 1000;
 }
+.hamburger{
+    z-index:1000;
+}
+.rwd-navbar{
+    z-index:1000;
+}
 .head-navbarItem{
     font-weight: 300;
     color: #fffaed;
