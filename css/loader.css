@@ -4,7 +4,7 @@
     height: 100vh;
     z-index: 1;
     overflow: visible;
-    background: #F4EDE1 url('../img/loader.gif') no-repeat center center;
+    background: #F4EDE1 url('../image/loader.gif') no-repeat center center;
 }
 #loader img{
     text-align: center;
