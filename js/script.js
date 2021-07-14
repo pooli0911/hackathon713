@@ -1,4 +1,5 @@
 $(function () {
+
     $("#page_top").hide();
     $('.parallax').on("scroll", function () {
         console.log($('.parallax').scrollTop())
@@ -11,6 +12,11 @@ $(function () {
             $('.head-navbar').fadeOut("slow");
         } else {
             $('.head-navbar').fadeIn("slow");
+        }
+        if ($('.parallax').scrollTop() > 50) {
+            $('.scroll-down').fadeOut();
+        } else {
+            $('.scroll-down').fadeIn();
         }
 
 
@@ -30,6 +36,7 @@ $(function () {
             });
         }
     });
+
 
     $('#page_top a').on('click', function () {
         $('.parallax').animate({
