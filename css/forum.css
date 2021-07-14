@@ -120,18 +120,32 @@ section{
 	margin-left: 82.5%;
 }
 .section2{
+	width:80%;
 	display: flex;
 	flex-wrap: wrap;
 }
 .card{
-	background-color: grey;
-	border-radius: 50px;
+	background-color: #fff;
+	width: 300px;
+	height: 300px;
+	margin: 40px;
+	display: flex;
+	justify-content: center;
+}
+#addnew{
+	align-items: center;
+	font-size: 54px;
 }
 .card_link{
 }
 .card_img{
+	object-fit:contain;
+	width:280px;
+	height: 300px;
 }
 .card_title{
+	margin-top: auto;
 }
 .card_info{
+	margin-top: auto;
 }
