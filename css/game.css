@@ -183,9 +183,9 @@ width: 1070px;
 	display: none;
 
 }
-.game-box-b{}
-.game-box-c{}
-.game-box-c{}
+.game-box-2{}
+
+
 /* ----------game-box-home------------- */
 .game-play-home-flex{
 	display: flex;
@@ -238,10 +238,10 @@ width: 1070px;
 	border: #fffaed 2px solid;
 
 }
-.home-a{
+/* .home-a{
 
 
-}
+} */
 .home-a-mask{
 	position: absolute;
 	width: 270px;
@@ -265,12 +265,13 @@ width: 1070px;
 .home-b{
 
 }
+#game-3-btn{
+margin-left: 25%;
+}
 .home-c{
 
 }
-.home-d{
 
-}
 /* ------------game-box-1-------------- */
 .gameimg{
 	position: absolute;
