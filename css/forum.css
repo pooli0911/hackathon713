@@ -176,6 +176,24 @@ section{
 	color: #fffaed;
 }
 
+.photo{
+	display: flex;
+}
+
+.carde{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+}
+
+#addnewphoto{
+	align-items: center;
+	font-size: 54px;
+}
 
 @media (max-width: 2000px) {
 	.section2{
