@@ -44,7 +44,7 @@
                 <form>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">使用者名稱</label>
-                        <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" id="username" aria-describedby="emailHelp">
                     </div>
                 </form>
             </div>
@@ -82,12 +82,12 @@
             <a href="./login.html" class="install">已經有帳號？點擊登入</a>
         </div>
         <div class="log_btn">
-            <button type="submit" id="signin" class="btn btn-primary log">註冊</button>
+            <div id="signup" class="btn btn-primary log">註冊</div>
         </div>
         <p class="or-text">或</p>
         <div class="log_btn">
-            <button type="submit" id="signin" class="btn btn-primary google"><img src="./image/google.png">
-                使用Google帳號</button>
+            <div id="google" class="btn btn-primary google"><img src="./image/google.png">
+                使用Google帳號</div>
         </div>
     </div>
     <div id="page_top">
@@ -103,6 +103,11 @@
 <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
     integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
     crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-storage.js"></script>
+    <script src="./js/firebase.js"></script>
 <script src="./js/script.js"></script>
 
 
