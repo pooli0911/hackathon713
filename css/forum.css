@@ -6,6 +6,7 @@
 html{
 }
 body {
+	margin: 8px !important;
     background: linear-gradient(37deg, #F3DDBD 4%, #748AA3 94%);
     background: -moz-linear-gradient(37deg, #F3DDBD 4%, #748AA3 94%);
     background: -webkit-linear-gradient(37deg, #F3DDBD 4%, #748AA3 94%);
@@ -118,6 +119,7 @@ section{
 .forum-title{
 	font-size: 28px;
 	margin-left: 82.5%;
+	margin-top: -12%;
 }
 .section2{
 	margin-left: 10%;
@@ -125,6 +127,21 @@ section{
 	display: flex;
 	flex-wrap: wrap;
 }
+.search{
+	width: 30%;
+	height: 40px;
+	border-top: solid #fffaed 1px;
+	border-bottom: solid #fffaed 1px;
+	margin-top: 5%;
+	margin-left: 9%;
+}
+.link-right {
+	width: 30px;
+	height: 50%;
+	border-right: solid #fffaed 1px;
+	margin-top: 2%;
+}
+
 #back{
 	font-size: 54px;
 }
@@ -149,10 +166,35 @@ section{
 }
 .card_title{
 	margin-top: auto;
+	color: #fffaed;
 }
 .card_info{
 	margin-top: auto;
+	color:#fffaed;
 }
+.arrow{
+	color: #fffaed;
+}
+
+.photo{
+	display: flex;
+}
+
+.carde{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+}
+
+#addnewphoto{
+	align-items: center;
+	font-size: 54px;
+}
+
 @media (max-width: 2000px) {
 	.section2{
 		margin-left: 10%;

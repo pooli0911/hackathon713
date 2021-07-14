@@ -2,7 +2,7 @@ $(function () {
 
     $("#page_top").hide();
     $('.parallax').on("scroll", function () {
-        console.log($('.parallax').scrollTop())
+        //console.log($('.parallax').scrollTop())
         if ($('.parallax').scrollTop() > 100) {
             $('#page_top').fadeIn("slow");
         } else {

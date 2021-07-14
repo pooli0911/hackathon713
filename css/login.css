@@ -23,10 +23,19 @@ body {
     letter-spacing: 0.11rem !important;
 }
 #login-img{
-    width: 100%;cit
-    max-height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     object-fit:cover;
     object-position:0% 100%;
+}
+.head-navbar{
+    z-index: 1000;
+}
+.hamburger{
+    z-index:1000;
+}
+.rwd-navbar{
+    z-index:1000;
 }
 .head-navbarItem{
     font-weight: 300;
