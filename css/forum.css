@@ -54,7 +54,7 @@ body {
 	 top: 200%;
 	 left: 0;
 	 right: 0;
-	 height: 2000px;
+	 height: 2100px;
 	 z-index: 1;
 	 
 }
@@ -148,10 +148,18 @@ section{
 .card{
 	background-color: #fff;
 	width: 250px;
-	height: 250px;
-	margin: 30px;
+	height: 280px;
+	margin: 50px;
 	display: flex;
 	justify-content: center;
+	cursor: pointer;
+}
+.card_title{
+	height:70px;
+	padding-top:10%;
+}
+.userinfo{
+	margin-bottom:10%;
 }
 #addnew{
 	align-items: center;
@@ -195,12 +203,13 @@ section{
 	font-size: 54px;
 }
 
-/* .w3-display-container{
+.w3-display-container{
 	margin-left:0;
 	margin-top:15%;
+	margin-bottom:5%;
 	width:50%;	
 }
-.card{
+/* .card{
 	margin:auto;
 } */
 
