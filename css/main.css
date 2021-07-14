@@ -132,6 +132,9 @@ section{
 	display: flex;
 	margin-top: 5%;
 }
+.section3{
+	margin-top:15%;
+}
 .main-button{
 	width: 170px;
 	height: 55px;
@@ -165,6 +168,41 @@ section{
 	margin-top: -8%;
 	font-size: 28px;
 }
+
+.graph-flex{
+	display:flex;
+	margin-top:30%;
+}
+.flex2,
+.flex3{
+	margin-top:10%;
+}
+.graph{
+	width:34%;
+	height:250px;
+}
+.graph-button{
+	margin-top:23%;
+	margin-left:15%;
+}
+.graph-button-otherside{
+	margin-top:23%;
+}
+.graph-text{
+	margin-top:-1%;
+	margin-left:15%;
+}
+.otherside{
+	margin-left:0;
+	margin-right:15%;
+
+}
+.graph-img2{
+	width:34%;
+}
+.graph-img3{
+	width:34%;
+}
 .article-title{
 	font-size: 28px;
 	margin-left: 10%;
@@ -176,7 +214,7 @@ section{
 	margin-left: 14.5%;
 }
 .game-text{
-	margin-left: 15%;
+	margin-left: 10%;
 	width: 52%;
 	font-size: 20px;
 }
