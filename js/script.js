@@ -45,10 +45,7 @@ $(function () {
         return false;
     });
 
-<<<<<<< HEAD
     gameBtnInit();
-=======
-    
     $(".hamburger").click(function(){
       $(this).toggleClass("is-active");
     });
@@ -67,7 +64,6 @@ $(function () {
         }
     });
       
->>>>>>> 2fd9acfbe9748b24702e31c5a67b0e017d9c6717
 })
 	
 function gameBtnInit(){
