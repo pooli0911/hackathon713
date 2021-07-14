@@ -118,6 +118,7 @@ section{
 .forum-title{
 	font-size: 28px;
 	margin-left: 82.5%;
+	margin-top: -12%;
 }
 .section2{
 	margin-left: 10%;
@@ -125,6 +126,21 @@ section{
 	display: flex;
 	flex-wrap: wrap;
 }
+.search{
+	width: 30%;
+	height: 40px;
+	border-top: solid #fffaed 1px;
+	border-bottom: solid #fffaed 1px;
+	margin-top: 5%;
+	margin-left: 9%;
+}
+.link-right {
+	width: 30px;
+	height: 50%;
+	border-right: solid #fffaed 1px;
+	margin-top: 2%;
+}
+
 #back{
 	font-size: 54px;
 }
@@ -149,10 +165,17 @@ section{
 }
 .card_title{
 	margin-top: auto;
+	color: #fffaed;
 }
 .card_info{
 	margin-top: auto;
+	color:#fffaed;
 }
+.arrow{
+	color: #fffaed;
+}
+
+
 @media (max-width: 2000px) {
 	.section2{
 		margin-left: 10%;
