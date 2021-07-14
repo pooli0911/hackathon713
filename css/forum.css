@@ -124,6 +124,9 @@ section{
 	display: flex;
 	flex-wrap: wrap;
 }
+#back{
+	font-size: 54px;
+}
 .card{
 	background-color: #fff;
 	width: 300px;

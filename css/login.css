@@ -57,7 +57,7 @@ body {
     height:70%;
     border-radius: 20px;
     margin-left: 45%;
-    margin-top: 10%;
+    margin-top: 5%;
     position: absolute;
 }
 .id_form,
@@ -153,4 +153,7 @@ body {
     max-height: 100vh;
     object-fit:cover;
     object-position:0% 100%;
+}
+.logo{
+    z-index: 2;
 }

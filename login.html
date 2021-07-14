@@ -5,22 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/head-foot.css">
-    <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/head-foot.css">
+    <link rel="stylesheet" href="./css/login.css">
 
     <title>Home</title>
 </head>
 
 <body>
+    <div class="header">
+        <a href="./index.html" class="logo"><img src="./image/logo-others.png"></a>
+        <div class="head-navbar">
+            <a href="./index.html" class="head-navbarItem navbarItem1">關於我們</a>
+            <a href="./forum.html" class="head-navbarItem navbarItem2">線上論壇</a>
+            <a href="./game.html" class="head-navbarItem navbarItem3">Q&A</a>
+            <a href="./login.html" class="head-navbarItem navbarItem4">登入/註冊</a>
+        </div>
 
-
-    <div class="head-navbar">
-        <a href="./index.html" class="head-navbarItem navbarItem1">關於我們</a>
-        <a href="./forum.html" class="head-navbarItem navbarItem2">線上論壇</a>
-        <a href="./game.html" class="head-navbarItem navbarItem3">Q&A</a>
-        <a href="./login.html" class="head-navbarItem navbarItem4">登入/註冊</a>
     </div>
     <div class="login-img">
         <img src="./image/login-background.png" id="login-img" />
@@ -52,9 +54,9 @@
         <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
             <label class="form-check-label" for="flexCheckChecked">
-              記得我
+                記得我
             </label>
-          </div>
+        </div>
         <div class="form_notices">
             <a href="#" class="forget">忘記密碼？</a>
         </div>
@@ -62,7 +64,7 @@
             <a href="./card.html" class="install">還沒有帳號？點擊註冊</a>
         </div>
         <div class="log_btn">
-            <div id="signin" class="btn btn-primary log">登入</div>
+            <div id="login" class="btn btn-primary log">登入</div>
         </div>
         <p class="or-text">或</p>
         <div class="log_btn">
@@ -83,12 +85,12 @@
 <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
     integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
     crossorigin="anonymous"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-storage.js"></script>
-    <script src="./js/firebase.js"></script>
-    <script src="./js/script.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-storage.js"></script>
+<script src="./js/firebase.js"></script>
+<script src="./js/script.js"></script>
 
 
 

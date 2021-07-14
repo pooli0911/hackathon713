@@ -12,13 +12,27 @@
 </head>
 
 <body>
-    <div class="head-navbar">
-        <a href="./index.html" class="head-navbarItem navbarItem1">關於我們</a>
-        <a href="./forum.html" class="head-navbarItem navbarItem2">線上論壇</a>
-        <a href="./game.html" class="head-navbarItem navbarItem3">Q&A</a>
-        <a href="./login.html" class="head-navbarItem navbarItem4">登入/註冊</a>
+    <div class="header">
+        <a href="index.html" class="logo"><img src="./image/logo-others.png"></a>
+        <div class="head-navbar">
+            <a href="./index.html" class="head-navbarItem navbarItem1">關於我們</a>
+            <a href="./forum.html" class="head-navbarItem navbarItem2">線上論壇</a>
+            <a href="./game.html" class="head-navbarItem navbarItem3">Q&A</a>
+            <a href="./login.html" class="head-navbarItem navbarItem4">登入/註冊</a>
+        </div>
+        <div class="rwd-navbar">
+            <a href="#about-us" class="head-navbarItem navbarItem1">關於我們</a>
+            <a href="./forum.html" class="head-navbarItem navbarItem2">線上論壇</a>
+            <a href="./game.html" class="head-navbarItem navbarItem3">Q&A</a>
+            <a href="./login.html" class="head-navbarItem navbarItem4">登入/註冊</a>
+        </div>
+        <div class="hamburger" id="hamburger-6">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
     </div>
-    <div class="scroll-down animate__animated animate__slideInDown " >
+    <div class="scroll-down animate__animated animate__slideInDown ">
         <div class="scroll-text">Scroll</div>
         <img src="./image/scroll-down.png" alt="" class="scroll-img">
     </div>
@@ -58,7 +72,6 @@
                 </div>
             </section>
             <section class="section2">
-                <div class="card" id="addnew">+</div>
             </section>
             <div class="footer">
                 <div class="footer-line"></div>
@@ -99,16 +112,39 @@
         </div>
     </div>
 </template>
+<template id="template0" style="display: none;">
+    <div class="card" id="addnew">+</div>
+</template>
+<template id="template2" style="display: none;">
+    <div id="back"><</div>
+    <div class="card">
+        <div class="card_link">
+            <img class="card_img" src="URL_HERE" alt="ALT_HERE">
+            <h1 class="card_title">TITLE_HERE</h1>
+            <p class="card_info">INFO_HERE</p>
+        </div>
+    </div>
+</template>
+<template id="template3" style="display: none;">
+    <div id="back"><</div>
+    <div class="card">
+        <div class="card_link">
+            <img class="card_img" src="URL_HERE" alt="ALT_HERE">
+            <h1 class="card_title">TITLE_HERE</h1>
+            <p class="card_info">INFO_HERE</p>
+        </div>
+    </div>
+</template>
 <script src="./js/jquery-1.9.0.min.js"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
     integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
     crossorigin="anonymous"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-storage.js"></script>
-    <script src="./js/firebase.js"></script>
-    <script src="./js/script.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-storage.js"></script>
+<script src="./js/firebase.js"></script>
+<script src="./js/script.js"></script>
 
 
 </html>

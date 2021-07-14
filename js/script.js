@@ -9,9 +9,9 @@ $(function () {
             $('#page_top').fadeOut("slow");
         }
         if ($('.parallax').scrollTop() > 300) {
-            $('.head-navbar').fadeOut("slow");
+            $('.header').fadeOut("slow");
         } else {
-            $('.head-navbar').fadeIn("slow");
+            $('.header').fadeIn("slow");
         }
         if ($('.parallax').scrollTop() > 50) {
             $('.scroll-down').fadeOut();
@@ -45,7 +45,29 @@ $(function () {
         return false;
     });
 
+<<<<<<< HEAD
     gameBtnInit();
+=======
+    
+    $(".hamburger").click(function(){
+      $(this).toggleClass("is-active");
+    });
+    $(".hamburger").click(function () {
+        $(".rwd-navbar").toggleClass(".pc_menu_click");
+        if ($(".rwd-navbar").hasClass(".pc_menu_click")) {
+            $(".rwd-navbar").css('transform', 'translate(-222.5px,0)');
+            $(".rwd-navbar").css('transition-duration', '0.5s');
+            $(".rwd-navbar").css('transition-timing-function', 'ease-in-out');
+
+        } else {
+            $(".rwd-navbar").css('transform', 'translate(222.5px,0)');
+            $(".rwd-navbar").css('transition-duration', '0.5s');
+            $(".rwd-navbar").css('transition-timing-function', 'ease-in-out');
+
+        }
+    });
+      
+>>>>>>> 2fd9acfbe9748b24702e31c5a67b0e017d9c6717
 })
 	
 function gameBtnInit(){

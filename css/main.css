@@ -55,7 +55,11 @@ body {
 	 top: 160%;
 	 left: 0;
 	 right: 0;
+<<<<<<< HEAD
 	 min-height: 2000px;
+=======
+	 height: 2500px;
+>>>>>>> 2fd9acfbe9748b24702e31c5a67b0e017d9c6717
 	 z-index: 1;
 	 
 }
@@ -177,10 +181,7 @@ section{
 .flex3{
 	margin-top:10%;
 }
-.graph{
-	width:34%;
-	height:250px;
-}
+
 .graph-button{
 	margin-top:23%;
 	margin-left:15%;
@@ -191,17 +192,17 @@ section{
 .graph-text{
 	margin-top:-1%;
 	margin-left:15%;
+	font-size: 20px;
 }
 .otherside{
 	margin-left:0;
 	margin-right:15%;
 
 }
-.graph-img2{
+.graph{
 	width:34%;
-}
-.graph-img3{
-	width:34%;
+	height: 34%;
+	border-radius: 10px;
 }
 .article-title{
 	font-size: 28px;
@@ -213,14 +214,15 @@ section{
 	margin-top: -8%;
 	margin-left: 14.5%;
 }
-.game-text{
-	margin-left: 10%;
+.game-text, .article-text{
+	margin-left: 15%;
 	width: 52%;
 	font-size: 20px;
 }
 
 /* RWD */
 @media (max-width: 770px) {
+	
 	.main-button{
 		width: 130px;
 		height: 40px;
@@ -264,4 +266,24 @@ section{
 		margin-top: -5%;
 		margin-right: 7%;
 	}
+	.article-text{
+		margin-left: 5%;
+	}
+	.graph{
+		width:27%;
+	}
+	.graph-text{
+		margin-top:-1%;
+		margin-left:15%;
+		font-size: 16px;
+	}
+	.graph-button-otherside{
+		margin-top:10%;
+		margin-left: 14%;
+	}
+	.graph-button{
+		margin-top: 10%;
+	}
+	
 }
+
