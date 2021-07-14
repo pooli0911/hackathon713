@@ -9,9 +9,9 @@ $(function () {
             $('#page_top').fadeOut("slow");
         }
         if ($('.parallax').scrollTop() > 300) {
-            $('.head-navbar').fadeOut("slow");
+            $('.header').fadeOut("slow");
         } else {
-            $('.head-navbar').fadeIn("slow");
+            $('.header').fadeIn("slow");
         }
         if ($('.parallax').scrollTop() > 50) {
             $('.scroll-down').fadeOut();

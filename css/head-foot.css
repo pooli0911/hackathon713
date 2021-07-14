@@ -5,6 +5,12 @@ body {
 	letter-spacing: 0.11em;
 }
 /* header */
+.header{
+	display: flex;
+}
+.logo{
+	margin-left: 2%;
+}
 .head-navbar{
     display:flex;
     position:absolute;
@@ -24,6 +30,9 @@ body {
 }
 .head-navbarItem:hover{
 	font-weight: 500;
+}
+.navbarItem0{
+	left: 0;
 }
 /* scroll */
 .scroll-down{
