@@ -158,8 +158,20 @@ firebase.auth().onAuthStateChanged((user) => {
       // User is signed in, see docs for a list of available properties
       // https://firebase.google.com/docs/reference/js/firebase.User
       var uid = user.uid;
+      if(user!=null){
+        document.getElementsByClassName("navbarItem4")[0].setAttribute("href","#")
+        document.getElementsByClassName("navbarItem4")[0].innerText="登出"
+        document.getElementsByClassName("navbarItem4")[0].onclick=()=>{
+            firebase.auth().signOut().then(() => {
+                console.log("sus")
+                window.location="/"
+            }).catch((error) => {
+                console.log(error)
+            });
+        }
+    }
     console.log("login as "+uid)
       // ...
     } else {
     }
-  });
+});
