@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" >
+    <link href="css/hover.css" rel="stylesheet" media="all">
     <link rel="stylesheet" href="./css/game.css">
     <link rel="stylesheet" href="./css/head-foot.css">
     <title>Game</title>
@@ -49,7 +51,72 @@
                 </div>
                 <div class="game-box-section">
                     <div class="game-box">
-                        <img src="./image/game/鹿.png" class="gameimg img01">
+                        <img src="./image/circle.png" id="answer-1-1"class="check-circle circle-1-1-1 ">
+                        <img src="./image/game/鹿.png" class="gameimg img01" type="button" data-toggle="modal" data-target="#game-1-1">
+                         <!-- Modal -->
+                        <div class="modalself modal fade" id="game-1-1" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content ">
+                                <div class="modal-header modalcolor-h">
+                                    <div class="modal-title modal-text01">
+                                        <div class="title-text">野生梅花鹿</div>
+	                                    <div class="subtitle-text">野生動植物滅絕的最大原因是：</div>
+                                    </div>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body modal-text01">
+                                    <div id="btn-1-1-1" class="btn-item hvr-pulse-grow">生境破壞及惡化</div >
+                                    <div id="btn-1-1-2" class="btn-item hvr-pulse-grow">大肆捕獲</div >
+                                    <div id="btn-1-1-3" class="btn-item hvr-pulse-grow">外來物種影響</div >
+                                </div>
+                                <div class="modal-footer  d-none">
+                                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                                <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                         <!-- Modal-fail -->
+                         <div class="modalself modal fade" id="game-fail" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header modalcolor-fail border ">
+                                    <div class="modal-title modal-text-fail">
+                                        <div class="title-text">嗚~失敗了~</div>
+	                                    <div class="subtitle-text">請再接再厲呦!</div>
+                                    </div>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                         <!-- Modal-sus -->
+                         <div class="modalself modal fade" id="game-sus1-1" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header modalcolor-h">
+                                    <div class="modal-title modal-text01">
+                                        <div class="title-text">恭喜你~答對了!!</div>
+	                                    
+                                    </div>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body modal-sus ">
+                                    <div class="modal-text-sus modal-text01">
+                                       野生動植物滅絕的最大原因<br>是生境破壞及惡化喔! 
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        
                         <img src="./image/game/鳥.png" class="gameimg img02">
                         <img src="./image/game/老鷹.png" class="gameimg img03">
                     </div>
@@ -90,6 +157,7 @@
             <img src="./image/top-alignment.png">
         </a>
     </div>
+  
 
 
 </body>
@@ -102,6 +170,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-storage.js"></script>
     <script src="./js/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
 
 

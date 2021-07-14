@@ -44,4 +44,27 @@ $(function () {
         }, 500);
         return false;
     });
+
+    gameBtnInit();
 })
+	
+function gameBtnInit(){
+    $('#btn-1-1-1').click(function(event) {
+        checkAns(1,1,1,1);
+      });
+      $('#btn-1-1-2').click(function(event) {
+        checkAns(1,1,2,0);
+      });
+      $('#btn-1-1-3').click(function(event) {
+        checkAns(1,1,32,0);
+      });
+}
+function checkAns(n1,n2,n3,isCorrect) {
+    $('#game-'+n1+'-'+n2).modal('hide');
+    if(isCorrect==1){
+      $('#game-sus'+n1+'-'+n2).modal('show');
+      $('#answer-'+n1+'-'+n2).addClass('circle-view');
+    }else{
+      $('#game-fail').modal('show');
+    }
+  }

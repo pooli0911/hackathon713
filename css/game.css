@@ -6,20 +6,17 @@
 html{
 }
 body {
-    background: linear-gradient(74deg, #E9F3FA 0%, #00ACE6 100%);
-    background: -moz-linear-gradient(74deg, #E9F3FA 0%, #00ACE6 100%);
-    background: -webkit-linear-gradient(74deg, #E9F3FA 0%, #00ACE6 100%);
-    background: -o-linear-gradient(74deg, #E9F3FA 0%, #00ACE6 100%);
 	width: 100vw;
+
 	overflow-x: hidden;
 	font-family: 'Noto Sans TC', sans-serif;
 }
 /* header */
 .navbarItem3{
-    font-weight: 500;
+    font-weight: 500!important;
 }
 .head-navbarItem{
-    color: #fffaed;
+    color: #fffaed!important;
 }
 
  .parallax {
@@ -34,6 +31,10 @@ body {
 	 bottom: 0;
 	 margin-left: -780px;
 	 z-index: -3;
+	 background: linear-gradient(74deg, #E9F3FA 0%, #00ACE6 100%);
+	 background: -moz-linear-gradient(74deg, #E9F3FA 0%, #00ACE6 100%);
+	 background: -webkit-linear-gradient(74deg, #E9F3FA 0%, #00ACE6 100%);
+	 background: -o-linear-gradient(74deg, #E9F3FA 0%, #00ACE6 100%);
 }
  .parallax__layer {
 	 position: absolute;
@@ -158,4 +159,102 @@ top: 160px;
 .img03{
 	left: 700px;
 	top: 70px;
+}
+.modalself{
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+/* .modalself-box{
+	z-index: 6;
+} */
+.modal-backdrop{
+	/* position: absolute!important;
+	height: 600px!important;
+	width: 1070px!important; */
+	display: none!important;
+	
+}
+.modal-header{
+	position: relative;
+}
+.modalcolor-h{
+	background-color: #7dc6c6!important;
+}
+.close{
+	position: absolute;
+	right: 20px;
+	top: 20%;
+}
+.modal-text01{
+	color: #46443f!important;
+}
+
+.modal-title{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.title-text{
+	font-size: 30px;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+.subtitle-text{
+	font-size: 20px;
+}
+.modal-body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.btn-item{
+	background: rgb(241, 143, 50);
+	height: 50px;
+	width: 300px;
+	border-radius: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 22px;
+	font-weight: 400;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.modalcolor-fail{
+	background: rgb(241, 88, 50);
+}
+.modal-text-fail{
+	color: white;
+}
+.modal-sus{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.modal-text-sus{
+	width: 80%;
+	font-size: 20px;
+	text-align: center;
+}
+.check-circle{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	z-index: 5;
+}
+.circle-1-1-1{
+	left: 110px;
+	top: 280px;
+	display: none;
+	
+}
+.circle-view{
+	display: block;
 }
