@@ -148,8 +148,8 @@ section{
 .card{
 	background-color: #fff;
 	width: 250px;
-	height: 280px;
-	margin: 50px;
+	height: 250px;
+	margin:80px 50px;
 	display: flex;
 	justify-content: center;
 	cursor: pointer;
@@ -171,6 +171,11 @@ section{
 	height:70px;
 	padding-top:10%;
 }
+.card-inside_title{
+	color:#fff;
+	height:70px;
+	padding-top:10%;
+}
 .userinfo{
 	margin-bottom:10%;
 }
@@ -186,7 +191,7 @@ section{
 	height: 250px;
 }
 .card_title{
-	margin-top: auto;
+	margin-top:-8%;
 	color: #fffaed;
 }
 .card_info{
