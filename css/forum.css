@@ -195,6 +195,15 @@ section{
 	font-size: 54px;
 }
 
+/* .w3-display-container{
+	margin-left:0;
+	margin-top:15%;
+	width:50%;	
+}
+.card{
+	margin:auto;
+} */
+
 @media (max-width: 2000px) {
 	.section2{
 		margin-left: 10%;
