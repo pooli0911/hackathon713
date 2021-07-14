@@ -105,6 +105,27 @@ async function preparecards(){
             .catch((error) => {
                 console.log(error)
             });
+            let imglist=[]
+            if(doc.data().imgName2!=null&&doc.data().imgName2!=""){
+                storageRef.child(doc.data().imgName2).getDownloadURL()
+                .then((url) => {
+                    imglist[0]=url
+                    temp.innerHTML=temp.innerHTML.replace('URL2_HERE',url);
+                })
+                .catch((error) => {
+                    console.log(error)
+                });
+            }
+            if(doc.data().imgName3!=null&&doc.data().imgName3!=""){
+                storageRef.child(doc.data().imgName3).getDownloadURL()
+                .then((url) => {
+                    imglist[1]=url
+                    temp.innerHTML=temp.innerHTML.replace('URL3_HERE',url);
+                })
+                .catch((error) => {
+                    console.log(error)
+                });
+            }
             document.getElementsByClassName("section2")[0].appendChild(temp)
             $('#'+temp.id).on('click',()=>{
                 console.log(temp.id)
@@ -114,6 +135,8 @@ async function preparecards(){
                 tempe.innerHTML=tempe.innerHTML.replace('TITLE_HERE',doct.data().uid);
                 tempe.innerHTML=tempe.innerHTML.replace('INFO_HERE',doct.data().info);
                 tempe.innerHTML=tempe.innerHTML.replace('URL_HERE',imgurl);
+                tempe.innerHTML=tempe.innerHTML.replace('URL2_HERE',imglist[0]);
+                tempe.innerHTML=tempe.innerHTML.replace('URL3_HERE',imglist[1]);
                 console.log(doct.data().uid)
                 document.getElementsByClassName("section2")[0].innerHTML=tempe.innerHTML
                 document.getElementById("back").onclick=()=>{
