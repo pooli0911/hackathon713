@@ -145,12 +145,27 @@
     <div id="back">
         <i class="fas fa-angle-left arrow"></i>
     </div>
-    <div class="card">
-        <div class="card_link">
-            <img class="card_img article-img" src="URL_HERE" alt="ALT_HERE">
-            <h1 class="card_title">TITLE_HERE</h1>
-            <p class="card_info">INFO_HERE</p>
-        </div>
+    <div class="userinfo">
+        <img class="user_img article-img" src="URL_HERE" alt="ALT_HERE">
+        <h1 id="user_name">NAME_HERE</h1>
+        <p id="current_time">TIME_HERE</p>
+    </div>
+    <div class="title">
+        <label for="title">標題</label>
+        <input type="text" name="title" id="title">
+    </div>
+    <div class="info">
+        <label for="info">內文</label>
+        <input type="text" name="info" id="info">
+    </div>
+    <div class="photo">
+        <div class="card" id="addnewphoto">+</div>
+        <div class="card" id="addnewphoto">+</div>
+        <div class="card" id="addnewphoto">+</div>
+    </div>
+    <div class="location">
+        <label for="location">地點</label>
+        <input type="text" name="location" id="location">
     </div>
 </template>
 
@@ -161,7 +176,7 @@
     <div class="w3-content w3-display-container" style="max-width:800px">
         <div class="card">
             <div class="card_link">
-                <img class="card_img mySlides" src="URL_HERE" alt="ALT_HERE">
+                <img class="card_img mySlides" src="URL_HERE" alt="ALT_HERE" style="display: block;">
                 <img class="card_img mySlides" src="URL2_HERE" alt="ALT_HERE">
                 <img class="card_img mySlides" src="URL3_HERE" alt="ALT_HERE">
                 <h1 class="card_title">TITLE_HERE</h1>
@@ -172,7 +187,7 @@
             style="width:100%">
             <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
             <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white w3-white" onclick="currentDiv(1)"></span>
             <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
             <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
         </div>
