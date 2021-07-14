@@ -71,7 +71,6 @@ body {
 .form-label{
     color:#FFFAED;
     opacity: 1;
-
 }
 .form-control{
     height: 30px!important;
@@ -81,13 +80,20 @@ body {
     font-size: 12px;
     line-height: 30px;
 }
+
 .forget{
     color:#FFFAED;
+}
+.forget:hover, .install:hover{
+    color: #e6ddc8 !important;
 }
 .install{
     color:#FFFAED;
 }
 .log_btn{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
     margin-top:20px;
     text-align: center;
 }
@@ -95,7 +101,6 @@ body {
     width:250px;
     height:61px;
     background-color: #FFFAED !important;
-    opacity: 1 !important;
     color:#414761 !important;
     border:#414761 !important;
     border-radius: 30px !important;
@@ -110,7 +115,15 @@ body {
     text-align:center;
     margin-top:10px;
 }
+.log{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
 .google{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
     font-size:15px !important;
 }
 /* .img{
