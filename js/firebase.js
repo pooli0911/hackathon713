@@ -78,7 +78,7 @@ if(document.getElementById("signup")){
     }
 }
 var card=document.getElementById("card_template");
-function preparecards(){
+async function preparecards(){
     let adder=document.createElement("div")
     adder.innerHTML=document.getElementById("template0").innerHTML
     document.getElementsByClassName("section2")[0].appendChild(adder)
@@ -107,15 +107,20 @@ function preparecards(){
             });
             document.getElementsByClassName("section2")[0].appendChild(temp)
             $('#'+temp.id).on('click',()=>{
-                let temp=document.getElementById("template3")
-                temp.innerHTML=temp.innerHTML.replace('TITLE_HERE',doc.data().uid);
-                temp.innerHTML=temp.innerHTML.replace('INFO_HERE',doc.data().info);
-                temp.innerHTML=temp.innerHTML.replace('URL_HERE',imgurl);
-                document.getElementsByClassName("section2")[0].innerHTML=temp.innerHTML
+                console.log(temp.id)
+                alldocRef.doc(temp.id).get().then((doct) => {
+                let tempe=document.createElement("div")
+                tempe.innerHTML=document.getElementById("template3").innerHTML
+                tempe.innerHTML=tempe.innerHTML.replace('TITLE_HERE',doct.data().uid);
+                tempe.innerHTML=tempe.innerHTML.replace('INFO_HERE',doct.data().info);
+                tempe.innerHTML=tempe.innerHTML.replace('URL_HERE',imgurl);
+                console.log(doct.data().uid)
+                document.getElementsByClassName("section2")[0].innerHTML=tempe.innerHTML
                 document.getElementById("back").onclick=()=>{
                     document.getElementsByClassName("section2")[0].innerHTML=null
                     preparecards();
                 }
+                });
             });
             // doc.data() is never undefined for query doc snapshots
             console.log(doc.id, JSON.stringify(doc.data().uid));
