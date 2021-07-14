@@ -71,7 +71,6 @@ body {
 .form-label{
     color:#FFFAED;
     opacity: 1;
-
 }
 .form-control{
     height: 30px!important;
@@ -81,8 +80,12 @@ body {
     font-size: 12px;
     line-height: 30px;
 }
+
 .forget{
     color:#FFFAED;
+}
+.forget:hover, .install:hover{
+    color: #e6ddc8 !important;
 }
 .install{
     color:#FFFAED;
@@ -95,7 +98,6 @@ body {
     width:250px;
     height:61px;
     background-color: #FFFAED !important;
-    opacity: 1 !important;
     color:#414761 !important;
     border:#414761 !important;
     border-radius: 30px !important;
