@@ -6,7 +6,6 @@ html{
 }
 body {
 	width: 100vw;
-
 	overflow-x: hidden;
 	font-family: 'Noto Sans TC', sans-serif;
 }
@@ -16,6 +15,10 @@ body {
 }
 .head-navbarItem{
     color: #fffaed!important;
+}
+.head-navbarItem:hover{
+	font-weight: 500;
+	text-decoration: none;
 }
 
  .parallax {
@@ -65,7 +68,7 @@ body {
 	 padding-top: 80px;
 	 left: 0;
 	 right: 0;
-	 min-height: 2000px;
+	 min-height: 1640px;
 	 z-index: 0;
 
 	 
@@ -139,11 +142,12 @@ width: 1070px;
 	
 }
 .game-text-1{
+	font-weight: 500;
 	font-size: 36px;
 	margin-top: 80px;
 }
 .game-text-2{
-	width: 800px;
+	width: 750px;
 	font-size: 18px;
 	margin-top: 60px;
 
