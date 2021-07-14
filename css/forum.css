@@ -148,13 +148,31 @@ section{
 .card{
 	background-color: #fff;
 	width: 250px;
-	height: 280px;
-	margin: 50px;
+	height: 250px;
+	margin:80px 50px;
 	display: flex;
 	justify-content: center;
 	cursor: pointer;
 }
+.card-inside{
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+	margin:auto;
+	margin-bottom:9%;
+}
+.card-inside_link{
+	text-align: center;
+}
 .card_title{
+	height:70px;
+	padding-top:10%;
+}
+.card-inside_title{
+	color:#fff;
 	height:70px;
 	padding-top:10%;
 }
@@ -173,7 +191,7 @@ section{
 	height: 250px;
 }
 .card_title{
-	margin-top: auto;
+	margin-top:-8%;
 	color: #fffaed;
 }
 .card_info{
@@ -223,10 +241,13 @@ section{
 
 .w3-display-container{
 	margin-left:0;
-	margin-top:15%;
-	margin-bottom:5%;
+	margin-top:10%;
 	width:50%;	
 }
+.w3-badge{
+	margin-top:10%;
+}
+
 /* .card{
 	margin:auto;
 } */
