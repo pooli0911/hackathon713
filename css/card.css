@@ -118,6 +118,7 @@ body {
    border-radius: 30px !important;
    font-size: 32px ;
    font-family: 'Kosugi Maru', sans-serif;
+   margin-top: 1%;
 }
 .btn-primary:hover{
    background-color: #7d839e !important;
