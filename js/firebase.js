@@ -77,6 +77,43 @@ if(document.getElementById("signup")){
         }
     }
 }
+let fileSelector
+let fileList=[]
+function readImage(imgnum,file) {
+    // Check if the file is an image.
+    if (file.type && !file.type.startsWith('image/')) {
+      console.log('File is not an image.', file.type, file);
+      return;
+    }
+  
+    const reader = new FileReader();
+    reader.addEventListener('load', (event) => {
+        document.getElementById("newphoto"+imgnum).setAttribute("src",event.target.result);
+        document.getElementById("photo"+imgnum).style.display="flex";
+        document.getElementById("delete"+imgnum).onclick=()=>{
+            let thisnum=imgnum-1
+            if(imgnum==2&&fileList.length>2){
+                document.getElementById("newphoto2").setAttribute("src",document.getElementById("newphoto3").getAttribute("src"));
+                document.getElementById("photo3").style.display="none";
+            }
+            else if(imgnum==1&&fileList.length>2){
+                document.getElementById("newphoto1").setAttribute("src",document.getElementById("newphoto2").getAttribute("src"));
+                document.getElementById("newphoto2").setAttribute("src",document.getElementById("newphoto3").getAttribute("src"));
+                document.getElementById("photo3").style.display="none";
+            }
+            else if(imgnum==1&&fileList.length>1){
+                document.getElementById("newphoto1").setAttribute("src",document.getElementById("newphoto2").getAttribute("src"));
+                document.getElementById("photo2").style.display="none";
+            }
+            else{
+                document.getElementById("photo"+imgnum).style.display="none";
+            }
+            fileList.pop(thisnum)
+            console.log(fileList)
+        }
+    });
+    reader.readAsDataURL(file);
+}
 var card=document.getElementById("card_template");
 async function preparecards(){
     let adder=document.createElement("div")
@@ -84,10 +121,53 @@ async function preparecards(){
     document.getElementsByClassName("section2")[0].appendChild(adder)
     document.getElementById("addnew").onclick=()=>{
         document.getElementsByClassName("section2")[0].innerHTML=document.getElementById("template2").innerHTML
+        fileSelector= document.getElementById('photo');
+        fileSelector.addEventListener('change', (event) => {
+            if(fileList==null||fileList.length<3){
+                fileList.push(event.target.files[0]);
+                readImage(fileList.length,fileList[fileList.length-1])
+                document.getElementById('photo').value=null
+            }
+        });
         document.getElementById("back").onclick=()=>{
             document.getElementsByClassName("section2")[0].innerHTML=null
             preparecards();
         }
+        document.getElementById("submit").onclick=()=>{
+            var metadata = {
+                contentType: 'image/jpeg'
+            };
+            fileList.forEach((file)=>{
+                // Upload file and metadata to the object 'images/mountains.jpg'
+                var uploadTask = storageRef.child(file.name).put(file, metadata);
+                
+                // Listen for state changes, errors, and completion of the upload.
+                uploadTask.on(firebase.storage.TaskEvent.STATE_CHANGED, // or 'state_changed'
+                (snapshot) => {
+                    // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
+                    var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                    console.log('Upload is ' + progress + '% done');
+                    switch (snapshot.state) {
+                    case firebase.storage.TaskState.PAUSED: // or 'paused'
+                        console.log('Upload is paused');
+                        break;
+                    case firebase.storage.TaskState.RUNNING: // or 'running'
+                        console.log('Upload is running');
+                        break;
+                    }
+                }, 
+                (error) => {
+                    console.log(error)
+                }, 
+                () => {
+                    // Upload completed successfully, now we can get the download URL
+                    uploadTask.snapshot.ref.getDownloadURL().then((downloadURL) => {
+                    console.log('File available at', downloadURL);
+                    });
+                }
+                );
+            });
+        }  
     }
     alldocRef.get().then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
