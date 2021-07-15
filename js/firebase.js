@@ -36,6 +36,7 @@ var db=firebase.firestore();
 var storage = firebase.storage();
 var storageRef=storage.refFromURL("gs://hackathon713.appspot.com/")
 var alldocRef = db.collection("allThreads");
+var allaccRef = db.collection("allAccounts")
 if(document.getElementById("google")){
 document.getElementById("google").onclick=()=>{
     firebase.auth()
@@ -86,8 +87,13 @@ if(document.getElementById("signup")){
             firebase.auth()
             .createUserWithEmailAndPassword($('input[id=email]').val(),$('input[id=password]').val())
             .then((userCredential) => {
-                // Signed in
-                var user = userCredential.user;
+                userCredential.user.updateProfile({
+                    displayName:$('input[id=username]').val(),
+                }).then(function() {
+                    // Profile updated successfully!
+                    console.log("sus")
+                }, function(error) {
+                });
                 console.log(userCredential)
                 window.location="./"
             })
