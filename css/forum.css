@@ -58,7 +58,7 @@ body {
 	 top: 200%;
 	 left: 0;
 	 right: 0;
-	 height: 2100px;
+	 min-height: 2100px;
 	 z-index: 1;
 	 
 }
