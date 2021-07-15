@@ -561,23 +561,56 @@ display: none;
 	left: 10px;
 	top: 300px;
 }
+.circle-3-1{
+	left: 50px;
+	top: 360px;
+	display: none;
+}
+
 .img3-2{
 	top: 519px;
+}
+.circle-3-2{
+	top: 519px;
+	left: 50px;
+	display: none;
 }
 .img3-3{
 	left: 360px;
 	top: 40px;
+}
+.circle-3-3{
+	left: 490px;
+	top: 120px;
+	display: none;
 }
 .img3-4{
 	left: 550px;
 	top: 400px;
 	z-index: 9;
 }
+.circle-3-4{
+	left: 590px;
+	top: 450px;
+	z-index: 10;
+	display: none;
+}
 .img3-5{
 	left: 680px;
 	top: 380px;
 }
+.circle-3-5{
+
+		left: 750px;
+		top: 430px;
+		display: none;
+}
 .img3-6{
 	left: 800px;
 	top: 200px;
+}
+.circle-3-6{
+	left: 826px;
+	top: 230px;
+	display: none;
 }
