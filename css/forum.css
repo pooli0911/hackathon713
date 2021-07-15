@@ -116,8 +116,8 @@ section{
 .section1{
 	color: #fffaed;
 }
-.forum-title{
-	font-size: 28px;
+.forum-title h3{
+	font-size: 28px !important;
 	margin-left: 82.5%;
 	margin-top: -12%;
 }
@@ -201,6 +201,9 @@ section{
 .arrow{
 	color: #fffaed;
 }
+.arrow:hover{
+	color: #e6ddc8;
+}
 .user_img{
 	width: 50px;
 }
@@ -212,7 +215,7 @@ section{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #fff;
+	background-color: #fffaed;
 	width: 200px;
 	height: 200px;
 	margin: 10px;
@@ -252,20 +255,27 @@ section{
 }
 .userinfo{
 	display:flex;
+	margin-left: 10%;
 }
 .userinfo-text{
 	margin-left:5%;
 	color:#FFFAED;
 }
 .user_img{
-	margin-top:75%;
+	margin-top:35%;
+}
+.user_name{
+	font-size:24px;
+	margin-bottom: -3.5%;
 }
 .title{
 	display:block;
 	margin-top:-5%;
+	margin-left: 10%;
 }
 .info{
 	display:block;
+	margin-left: 10%;
 }
 
 .title-input{
@@ -286,12 +296,14 @@ section{
 }
 .photo{
 	display:block;
+	margin-left: 10%;
 }
 .carde{
 	margin-left:0;
 }
 .location{
 	display:block;
+	margin-left: 10%;
 }
 .location-input{
 	width:100%;
@@ -315,8 +327,6 @@ section{
 .submit_button:hover{
 	background-color: #e6ddc8;
 }
-
-
 
 @media (max-width: 2000px) {
 	.section2{
