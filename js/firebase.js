@@ -223,7 +223,6 @@ async function preparecards(){
                 }
                 );
             });
-            window.location="./forum.html"
         }
         }  
     }
