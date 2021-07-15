@@ -77,6 +77,12 @@ if(document.getElementById("login")){
                 var errorCode = error.code;
                 var errorMessage = error.message;
                 console.log(error)
+                if(errorCode=="auth/wrong-password"){
+                    alert=document.createElement("div")
+                    alert.id="login_alert"
+                    alert.innerText="密碼錯誤或帳號不存在"
+                    document.getElementsByClassName("log_btn")[0].insertBefore(alert,document.getElementById("login"))
+                }
             });
         }
     }

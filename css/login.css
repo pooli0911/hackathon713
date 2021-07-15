@@ -115,6 +115,7 @@ body {
 }
 .log_btn{
     display: flex !important;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top:20px;
@@ -166,4 +167,9 @@ body {
 }
 .logo{
     z-index: 2;
+}
+
+#login_alert{
+    color: #ff2d11;
+    font-weight: bold;
 }
