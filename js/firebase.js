@@ -9,11 +9,34 @@ var firebaseConfig = {
   // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 var provider = new firebase.auth.GoogleAuthProvider();
-const user = firebase.auth().currentUser;
+var uid
+firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+      // User is signed in, see docs for a list of available properties
+      // https://firebase.google.com/docs/reference/js/firebase.User
+      uid = user;
+      if(user!=null){
+        document.getElementsByClassName("navbarItem4")[0].setAttribute("href","#")
+        document.getElementsByClassName("navbarItem4")[0].innerText="登出"
+        document.getElementsByClassName("navbarItem4")[0].onclick=()=>{
+            firebase.auth().signOut().then(() => {
+                console.log("sus")
+                window.location="/"
+            }).catch((error) => {
+                console.log(error)
+            });
+        }
+    }
+    console.log("login as "+uid.displayName)
+      // ...
+    } else {
+    }
+});
 var db=firebase.firestore();
 var storage = firebase.storage();
 var storageRef=storage.refFromURL("gs://hackathon713.appspot.com/")
 var alldocRef = db.collection("allThreads");
+var allaccRef = db.collection("allAccounts")
 if(document.getElementById("google")){
 document.getElementById("google").onclick=()=>{
     firebase.auth()
@@ -64,8 +87,13 @@ if(document.getElementById("signup")){
             firebase.auth()
             .createUserWithEmailAndPassword($('input[id=email]').val(),$('input[id=password]').val())
             .then((userCredential) => {
-                // Signed in
-                var user = userCredential.user;
+                userCredential.user.updateProfile({
+                    displayName:$('input[id=username]').val(),
+                }).then(function() {
+                    // Profile updated successfully!
+                    console.log("sus")
+                }, function(error) {
+                });
                 console.log(userCredential)
                 window.location="./"
             })
@@ -120,7 +148,14 @@ async function preparecards(){
     adder.innerHTML=document.getElementById("template0").innerHTML
     document.getElementsByClassName("section2")[0].appendChild(adder)
     document.getElementById("addnew").onclick=()=>{
+        if(!uid){
+            window.location="./login.html"
+        }
+        else{
         document.getElementsByClassName("section2")[0].innerHTML=document.getElementById("template2").innerHTML
+        if(uid.displayName)document.getElementById("user_name").innerText=uid.displayName
+        document.getElementById("current_time").innerText=new Date()
+        if(uid.photoURL)document.getElementsByClassName("user_img")[0].setAttribute("src",uid.photoURL)
         fileSelector= document.getElementById('photo');
         fileSelector.addEventListener('change', (event) => {
             if(fileList==null||fileList.length<3){
@@ -137,6 +172,21 @@ async function preparecards(){
             var metadata = {
                 contentType: 'image/jpeg'
             };
+            console.log(uid.displayName)
+            var data={
+                uid: uid.displayName,
+                info: document.getElementById("info").value,
+                imgName: fileList[0]?fileList[0].name:"",
+                imgName2: fileList[1]?fileList[1].name:"",
+                imgName3: fileList[2]?fileList[2].name:""
+            }
+            alldocRef.doc(document.getElementById("title").value).set(data)
+            .then(() => {
+                console.log("sus")
+            })
+            .catch((error) => {
+                console.error("Error adding document: ", error);
+            });
             fileList.forEach((file)=>{
                 // Upload file and metadata to the object 'images/mountains.jpg'
                 var uploadTask = storageRef.child(file.name).put(file, metadata);
@@ -167,6 +217,7 @@ async function preparecards(){
                 }
                 );
             });
+        }
         }  
     }
     alldocRef.get().then((querySnapshot) => {
@@ -176,7 +227,7 @@ async function preparecards(){
             temp.innerHTML=card.innerHTML
             temp.innerHTML=temp.innerHTML.replace('TITLE_HERE',doc.data().uid);
             temp.innerHTML=temp.innerHTML.replace('INFO_HERE',doc.data().info);
-            let imgurl
+            let imgurl,img2url,img3url
             storageRef.child(doc.data().imgName).getDownloadURL()
             .then((url) => {
                 imgurl=url
@@ -185,11 +236,10 @@ async function preparecards(){
             .catch((error) => {
                 console.log(error)
             });
-            let imglist=[]
             if(doc.data().imgName2!=null&&doc.data().imgName2!=""){
                 storageRef.child(doc.data().imgName2).getDownloadURL()
                 .then((url) => {
-                    imglist[0]=url
+                    img2url=url
                     temp.innerHTML=temp.innerHTML.replace('URL2_HERE',url);
                 })
                 .catch((error) => {
@@ -199,7 +249,7 @@ async function preparecards(){
             if(doc.data().imgName3!=null&&doc.data().imgName3!=""){
                 storageRef.child(doc.data().imgName3).getDownloadURL()
                 .then((url) => {
-                    imglist[1]=url
+                    img3url=url
                     temp.innerHTML=temp.innerHTML.replace('URL3_HERE',url);
                 })
                 .catch((error) => {
@@ -215,8 +265,8 @@ async function preparecards(){
                 tempe.innerHTML=tempe.innerHTML.replace('TITLE_HERE',doct.data().uid);
                 tempe.innerHTML=tempe.innerHTML.replace('INFO_HERE',doct.data().info);
                 tempe.innerHTML=tempe.innerHTML.replace('URL_HERE',imgurl);
-                tempe.innerHTML=tempe.innerHTML.replace('URL2_HERE',imglist[0]);
-                tempe.innerHTML=tempe.innerHTML.replace('URL3_HERE',imglist[1]);
+                tempe.innerHTML=tempe.innerHTML.replace('URL2_HERE',img2url);
+                tempe.innerHTML=tempe.innerHTML.replace('URL3_HERE',img3url);                
                 console.log(doct.data().uid)
                 document.getElementsByClassName("section2")[0].innerHTML=tempe.innerHTML
                 document.getElementById("back").onclick=()=>{
@@ -233,25 +283,3 @@ async function preparecards(){
 if(card!=null){
     preparecards();
 }
-firebase.auth().onAuthStateChanged((user) => {
-    if (user) {
-      // User is signed in, see docs for a list of available properties
-      // https://firebase.google.com/docs/reference/js/firebase.User
-      var uid = user.uid;
-      if(user!=null){
-        document.getElementsByClassName("navbarItem4")[0].setAttribute("href","#")
-        document.getElementsByClassName("navbarItem4")[0].innerText="登出"
-        document.getElementsByClassName("navbarItem4")[0].onclick=()=>{
-            firebase.auth().signOut().then(() => {
-                console.log("sus")
-                window.location="/"
-            }).catch((error) => {
-                console.log(error)
-            });
-        }
-    }
-    console.log("login as "+uid)
-      // ...
-    } else {
-    }
-});

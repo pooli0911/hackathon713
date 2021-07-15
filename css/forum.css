@@ -116,8 +116,8 @@ section{
 .section1{
 	color: #fffaed;
 }
-.forum-title{
-	font-size: 28px;
+.forum-title h3{
+	font-size: 28px !important;
 	margin-left: 82.5%;
 	margin-top: -12%;
 }
@@ -201,6 +201,9 @@ section{
 .arrow{
 	color: #fffaed;
 }
+.arrow:hover{
+	color: #e6ddc8;
+}
 .user_img{
 	width: 50px;
 }
@@ -212,7 +215,7 @@ section{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #fff;
+	background-color: #fffaed;
 	width: 200px;
 	height: 200px;
 	margin: 10px;
@@ -247,16 +250,89 @@ section{
 .w3-badge{
 	margin-top:10%;
 }
+.flex-change{
+	width:50vw;
+}
+.userinfo{
+	display:flex;
+	margin-left: 10%;
+}
+.userinfo-text{
+	margin-left:5%;
+	color:#FFFAED;
+}
+.user_img{
+	margin-top:35%;
+}
+.user_name{
+	font-size:24px;
+	margin-bottom: -3.5%;
+}
+.title{
+	display:block;
+	margin-top:-5%;
+	margin-left: 10%;
+}
+.info{
+	display:block;
+	margin-left: 10%;
+}
 
-/* .card{
-	margin:auto;
-} */
+.title-input{
+	width:100%;
+	background-color:#54676E;
+	border: #FFFAED solid 2px;
+}
+.title-text{
+	color:#FFFAED;
+	font-size: 24px;
+    line-height: 28px;
+}
+.info-input{
+	width:100%;
+	height:100px;
+	background-color:#54676E;
+	border: #FFFAED solid 2px;
+}
+.photo{
+	display:block;
+	margin-left: 10%;
+}
+.carde{
+	margin-left:0;
+}
+.location{
+	display:block;
+	margin-left: 10%;
+}
+.location-input{
+	width:100%;
+	background-color:#54676E;
+	border: #FFFAED solid 2px;
+}
+.submit_button{
+	width: 170px;
+	height: 55px;
+	background-color: #fffaed;
+	border-radius: 30px;
+	color: #3C4522;
+	text-align: center;
+	line-height: 55px;
+	font-size: 16px;
+	cursor: pointer;
+	margin-top:10%;
+	margin-left:77%;
+	margin-right:0;
+}
+.submit_button:hover{
+	background-color: #e6ddc8;
+}
 
 @media (max-width: 2000px) {
 	.section2{
 		margin-left: 10%;
 		width:70%;
-		display: flex;
+		/* display: flex; */
 		flex-wrap: wrap;
 	}
 }
@@ -264,7 +340,7 @@ section{
 	.section2{
 		margin-left: 30%;
 		width:60%;
-		display: flex;
+		/* display: flex; */
 		flex-wrap: wrap;
 	}
 	
@@ -273,7 +349,7 @@ section{
 	.section2{
 		margin-left: 50%;
 		width:30%;
-		display: flex;
+		/* display: flex; */
 		flex-wrap: wrap;
 	}
 	
@@ -282,7 +358,7 @@ section{
 	.section2{
 		margin-left: 60%;
 		width:40%;
-		display: flex;
+		/* display: flex; */
 		flex-wrap: wrap;
 	}
 	
