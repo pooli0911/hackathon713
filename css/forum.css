@@ -258,7 +258,10 @@ section{
 	color:#FFFAED;
 }
 .user_img{
-	margin-top:75%;
+	margin-top:35%;
+}
+.user_name{
+	font-size:16px;
 }
 .title{
 	display:block;
