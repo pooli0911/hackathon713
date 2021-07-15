@@ -201,6 +201,9 @@ section{
 .arrow{
 	color: #fffaed;
 }
+.arrow:hover{
+	color: #e6ddc8;
+}
 .user_img{
 	width: 50px;
 }
