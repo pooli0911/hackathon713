@@ -225,7 +225,8 @@ async function preparecards(){
             let temp=document.createElement("div")
             temp.id=doc.id
             temp.innerHTML=card.innerHTML
-            temp.innerHTML=temp.innerHTML.replace('TITLE_HERE',doc.data().uid);
+            console.log(JSON.stringify(doc.data()))
+            temp.innerHTML=temp.innerHTML.replace('TITLE_HERE',doc.id);
             temp.innerHTML=temp.innerHTML.replace('INFO_HERE',doc.data().info);
             let imgurl,img2url,img3url
             storageRef.child(doc.data().imgName).getDownloadURL()
@@ -262,7 +263,8 @@ async function preparecards(){
                 alldocRef.doc(temp.id).get().then((doct) => {
                 let tempe=document.createElement("div")
                 tempe.innerHTML=document.getElementById("template3").innerHTML
-                tempe.innerHTML=tempe.innerHTML.replace('TITLE_HERE',doct.data().uid);
+                tempe.innerHTML=tempe.innerHTML.replace('TITLE_HERE',doct.id);
+                tempe.innerHTML=tempe.innerHTML.replace('NAME_HERE',doct.data().uid);
                 tempe.innerHTML=tempe.innerHTML.replace('INFO_HERE',doct.data().info);
                 tempe.innerHTML=tempe.innerHTML.replace('URL_HERE',imgurl);
                 tempe.innerHTML=tempe.innerHTML.replace('URL2_HERE',img2url);

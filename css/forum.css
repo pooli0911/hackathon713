@@ -5,6 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap');
 html{
 }
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+}
 body {
 	margin: 8px !important;
     background: linear-gradient(37deg, #F3DDBD 4%, #748AA3 94%);
@@ -327,7 +331,11 @@ section{
 .submit_button:hover{
 	background-color: #e6ddc8;
 }
-
+.authorname{
+	color: white;
+	font-size: 24px;
+	margin-left: 50px;
+}
 @media (max-width: 2000px) {
 	.section2{
 		margin-left: 10%;
