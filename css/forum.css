@@ -116,8 +116,8 @@ section{
 .section1{
 	color: #fffaed;
 }
-.forum-title{
-	font-size: 28px;
+.forum-title h3{
+	font-size: 28px !important;
 	margin-left: 82.5%;
 	margin-top: -12%;
 }
